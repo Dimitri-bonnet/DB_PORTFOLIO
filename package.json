@@ -1,0 +1,17 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./style/scss/main.scss:./style/css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.41.0",
+    "sass-loader": "^12.1.0",
+    "swup": "^2.0.14",
+    "three": "^0.132.2"
+  }
+}

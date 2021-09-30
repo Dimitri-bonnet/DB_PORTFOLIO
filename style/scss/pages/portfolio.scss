@@ -1,0 +1,121 @@
+.portfolio{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 90vh;
+   width: 100vw;
+   .slideshow-container {
+      width: 100%;
+      height: 80%;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      cursor: grab;
+      &:active{
+         cursor: grabbing;
+      }
+      .slideshow {
+         position: absolute;
+         display: flex;
+         align-items: center;
+         /* background-color: yellow; */
+         .slide {
+        /*     background-color: yellowgreen; */
+            z-index: 99;
+            flex-shrink: 0;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            user-select: none;
+            width: 40vw;
+            min-width: 350px;
+            height: 600px;
+            padding: 30px;
+            opacity: 0.5;
+            transition: all 0.6s ease;
+            opacity: 0.5;
+            &:hover{
+               opacity: 1;
+               button{
+                  background: $secondary;
+                  padding: 12px 18px;
+               }
+            }
+            img{
+               pointer-events: none;
+               width: 100%;
+               height: 100%;
+               box-shadow: $cardBoxShadow;
+           }
+            button{
+               transition: padding 1s ease;
+               border: none;
+               padding: 10px 15px;
+               background-color:$tertiary;
+               color: rgb(255, 255, 255);
+               position: absolute;
+               font-weight: 800;
+               top:95%;
+               left: 50%;
+               cursor: pointer;
+               transform: translate(-50%, -50%);
+               font-family: $raleWay;
+               font-size: 15px;
+               letter-spacing: 2px;
+               box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            }
+         }
+       }
+       .cursorDrag{
+          display: none;
+       }
+      /*  &:hover{
+         .cursorDrag{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            animation: Anim1 1s infinite alternate;
+            pointer-events: none;
+            background-color: $primary;
+            font-size: 14px;
+            font-weight: 800;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+            color: white;
+            font-family: $raleWay;
+            z-index: 99;
+          }
+       }    */
+    }
+    .slideBar{
+       height: 5px;
+       width: 80%;
+       background-color: gray;
+       &__bar{
+          height: 5px;
+          width: 20%;
+          background-color: $tertiary;
+       }
+    }
+}
+
+
+ .overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: rgba(0, 0, 0, 0.15);
+ }
+
+
+ 
+
+

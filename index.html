@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/a13498b757.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style/css/style.css" />
+    <title>DB Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/index.html" class="brand">
+                <i class="fas fa-dungeon fa-2x"></i>
+                <div class="me">
+                    <h1>BONNET DIMITRI</h1>
+                    <h2>DEVELOPPEUR FRONT-END</h2>
+                </div>
+            </a>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="/about.html">
+                            A PROPOS
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="/portfolio.html">
+                            PORTFOLIO
+                        </a>
+
+                    </li>
+                    <div class="icon">
+                        <li>
+                            <a href="https://github.com/Dimitri-bonnet" target="_blank">
+                                <i class="fab fa-github fa-lg"></i>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/dimitri-bonnet18/" target="_blank" >
+                                <i class="fab fa-linkedin-in fa-lg"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/assets/pdf/cv_DB.pdf" target="_blank"><i class="fas fa-file"></i></a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div class="responsiveNav">
+                <div class="responsiveNav__header">
+                    <a href="https://github.com/Dimitri-bonnet" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/dimitri-bonnet18/" target="_blank" ><i class="fab fa-linkedin-in fa-lg"></i></a>
+                    <a href="/assets/pdf/cv_DB.pdf" target="_blank"><i class="fas fa-file"></i></a>
+                </div>
+                <div class="responsiveNav__items">
+                    <ul>
+                        <li>
+                            <a href="/about.html">A PROPOS</a>
+                        </li>
+                        <li>
+                            <a href="/portfolio.html">PORTFOLIO</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="responsiveNav__footer ">
+                    <button class="contact">CONTACTE</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="swup" class="home transition-fade ">
+        <div class="home__header">
+            <h3></h3>
+        </div>
+        <div class="home__main">
+            <div class="card card1">
+                <div class="card__content">
+                    <h4>DEVELOPPEMENT</h4>
+                    <h3>WEB</h3>
+                    <p>Integration</p>
+                    <p>Accessibilité</p>
+                    <p>Versionning</p>
+                    <p>Programmation</p>
+                </div>
+                <div class="card__img">
+                    <img src="/assets/img/10169-min.png" alt="">
+                </div>
+            </div>
+            <div class="card card2">
+                <div class="card__content">
+                    <h4>DEVELOPPEMENT</h4>
+                    <h3>MOBILE</h3>
+                    <p>Mobile first</p>
+                    <p>Responsive disgne</p>
+                    <p>Ergonomie</p>
+                </div>
+                <div class="card__img">
+                    <img src="/assets/img/11136-min.png" alt="">
+                </div>
+            </div>
+            <div class="card card3">
+                <div class="card__content">
+                    <h4>CONCEPTION</h4>
+                    <h3>UI / UX Design</h3>
+                    <p>Maquettage</p>
+                    <p>Prototypage</p>
+                    <p>Design graphique</p>
+                    <p>Identité visuel</p>
+                </div>
+                <div class="card__img">
+                    <img src="/assets/img/11000-min.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <i class="far fa-envelope fa-2x stickyBtnContact contact"></i>
+    <div class="bgModal">
+        <div class="modal">
+            <div class="modal__content modalAnimOpen">
+                <button class="cm"><i class="far fa-times-circle fa-2x"></i></button>
+                <div class="formModal">
+                    <form action="">
+                        <h2>CONTACTEZ-MOI</h2>
+                        <div class="item">
+                            <label for="name">Nom</label>
+                            <input class="input" type="text" id="name" name="name">
+                        </div>
+                        <div class="item">
+                            <label for="firstName">Prénom</label>
+                            <input class="input" type="text" id="firstName" name="firstName">
+                        </div>
+                        <div class="item">
+                            <label for="email">Email</label>
+                            <input class="input" type="text" id="email" name="email">
+                        </div>
+                        <div class="item">
+                            <label for="objet">Objet</label>
+                            <input class="input" type="text" id="objet" name="objet">
+                        </div>
+                        <div class="item">
+                            <label for="message">Message</label>
+                            <textarea class="input" id="message" cols="30" rows="5" name="message"></textarea>
+                        </div>
+                        <button>ENVOYER</button>
+                    </form>
+                    <div class="overlayIsValid">
+                        <div class="overlayIsValid__content">
+                            <p>Merci, votre message a bien été envoyé</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="node_modules/swup/dist/swup.js"></script>
+    <script src="js/transition.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/service.js"></script>
+    <script src="js/models/project.js"></script>
+    <script src="/js/pages/home.js"></script>
+    <script src="js/pages/about.js"></script>
+    <script src="js/pages/portfolio.js"></script>
+    <script src="js/components/form.js"></script>
+    <script src="js/generique.js"></script>
+    <script src="js/components/sliderDarg.js"></script>
+
+</body>
+
+</html>
+
+<!-- <div class="bgLoader">
+        <div class="loader">
+            <div class="loader__content">
+                <img src="/assets/svgs/logo.svg" alt="">
+                <div class="blops">
+                    <div class="blop"></div>
+                    <div class="blop"></div>
+                    <div class="blop"></div>
+                </div>
+               
+            </div>
+        </div>
+    </div> -->

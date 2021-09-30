@@ -1,0 +1,241 @@
+
+.about{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    &__left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: 100%;
+        .tab {
+            width: 90%;
+            overflow: hidden;
+            box-shadow: $cardBoxShadow;
+            background-color: rgba(255, 255, 255, 0.062);
+            color: white;
+            height: 500px;
+            &__action{
+                display: flex;
+                button{
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    padding: 10px;
+                    font-family: $raleWay;
+                    font-size: 16px;
+                    letter-spacing: 2px;
+                }
+                .active{
+                    transition: background 0.5s ease-in-out;
+                    color:white;
+                    font-weight: 800;
+                    background: $primary;
+                    margin-bottom: -5px;
+                }
+            }
+            &__item{
+                font-family: $roboto;
+                animation: fadeEffect 1s;
+                padding: 10px;
+                height: 100%;
+                .content{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    padding: 5px;
+                    .softSkills{
+                        &__title{
+                            margin-top: 20px;
+                        }
+                        &__container{
+                            height: 80px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-around;
+                            align-items: center;
+                            p{
+                                text-align: center;
+                                padding: 10px;
+                                font-weight: 800;
+                                background-color: white;
+                                color: black
+                             /*    color: $primary */;
+                                box-shadow: $cardBoxShadow;
+                            }
+                        }
+                    }
+                    h4{
+                        text-align: center;
+                        margin: 10px;
+                        font-weight: initial;
+                    }
+                }
+            }
+          }
+    }
+    &__right{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                height: 400px;
+                width: 400px;
+                opacity: 0.8;
+                object-fit: cover;
+                box-shadow: $cardBoxShadow;
+                clip-path: circle(47.8% at 50% 50%);
+            }
+        
+        }
+        p{
+            font-family: $roboto;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+        }
+    } 
+}
+
+.bar {
+    width: 100%;
+    background-color: #ddd;
+    margin: 5px 0px;
+    .skills {
+        height: 8px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;;
+      }
+      .HTML {
+          width: 90%; 
+          background-color: #ff9f43;
+          animation: fillBarHTML 1s ease-in-out;   
+      }
+      .SCSS{
+        width: 70%;
+        background: #ff9ff3;
+        animation: fillBarSCSS 1s ease-in-out;
+      }
+      .JS{
+        width: 65%;
+        background: #f9ca24;
+        animation: fillBarJS 1s ease-in-out; 
+      }
+      .ANGULAR{
+          width: 50%;
+          background: rgb(235, 11, 11);
+        animation: fillBarANGULAR 1s ease-in-out;
+      }
+      .VUE{
+          width: 30%;
+          background: #10ac84;
+          animation: fillBarVUE 1s ease-in-out;
+      }
+      .BOOTSTRAP{
+          width: 80%;
+          background: #8854d0;
+          animation: fillBarBOOTSTRAP 1S ease-in-out;
+      }
+
+  }
+@keyframes fillBarHTML{
+    from{
+        opacity: 0;
+        width: 0%;
+    }
+    to{
+        opacity: 1;
+        width: 90%;
+    }
+}
+@keyframes fillBarSCSS{
+    from{
+        opacity: 0;
+        width: 0%;
+    }
+    to{
+        opacity: 1;
+        width: 70%;
+    }
+}
+@keyframes fillBarJS{
+    from{
+        opacity: 0;
+        width: 0%;
+    }
+    to{
+        opacity: 1;
+        width: 65%;
+    }
+}
+@keyframes fillBarANGULAR{
+    from{
+        opacity: 0;
+        width: 0%;
+    }
+    to{
+        opacity: 1;
+        width: 50%;
+    }
+}
+@keyframes fillBarVUE{
+    from{
+        opacity: 0;
+        width: 0%;
+    }
+    to{
+        opacity: 1;
+        width: 30%;
+    }
+}
+@keyframes fillBarBOOTSTRAP{
+    from{
+        opacity: 0;
+        width: 0%;
+    }
+    to{
+        opacity: 1;
+        width: 80%;
+    }
+}
+
+@keyframes fadeEffect {
+from {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+to {
+    opacity: 1;
+    transform: translateX(0px);
+}
+}
+
+@media screen and (max-width: 1100px) {
+    
+}
+@media screen and (max-width: 900px) {
+    .about{
+        flex-direction: column-reverse;
+        align-items: center;
+        &__left{
+            width: 100%;
+        }
+        &__right{
+            .content{
+                img{
+                    height: 250px;
+                    width: 250px;
+                }
+            }     
+        }
+    }
+}

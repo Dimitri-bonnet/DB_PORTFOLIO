@@ -1,0 +1,21 @@
+
+@import "./base/reset.scss";
+@import "./utils/variables.scss";
+@import "./pages/portfolio.scss";
+@import "./pages/index.scss";
+@import "./components/header.scss";
+@import "./transition/transition.scss";
+@import "./base/police.scss";
+@import "./components/stickyBtn.scss";
+@import "./pages/about.scss";
+@import "./components/modal.scss";
+@import "./components/loader.scss";
+ body{
+   /* background-image: url("/assets/background/slate-texture-background.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: hidden; */
+   background-color: rgb(83, 83, 83);
+   overflow: hidden;
+   height: 100vh;
+ }
