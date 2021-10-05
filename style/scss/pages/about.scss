@@ -1,22 +1,17 @@
 
 .about{
     display: flex;
-    justify-content: center;
-    height: 90vh;
-    &__left{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 60%;
-        height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+    min-height: 90vh;
         .tab {
-            width: 90%;
+            height: 600px;
+            width: 50%;
             overflow: hidden;
             box-shadow: $cardBoxShadow;
-            background-color: rgba(255, 255, 255, 0.062);
+            background: linear-gradient($primary, #91a7e5);
             color: white;
-            height: 500px;
             &__action{
                 display: flex;
                 button{
@@ -40,19 +35,126 @@
             &__item{
                 font-family: $roboto;
                 animation: fadeEffect 1s;
-                padding: 10px;
                 height: 100%;
+                .content__parcours{
+                    padding: 30px;
+                    height: 100%;
+                    h4{
+                        text-align: center;
+                        font-weight: initial;
+                    }
+                    .item{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        background-color: white;
+                        color: black;
+                        width: 100%;
+                        font-size: 14px;
+                        &__show{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            cursor: pointer;
+                            height: 40px;
+                            span{
+                                width: 10%;
+                                display: flex;
+                                justify-content: center;
+                                i{
+                                    color: $secondary;
+                                }
+                            }
+                            p{
+                                font-size: 12px;
+                                width: 90%;
+                            }
+                        }
+                        &__hidden{
+                            padding: 10px;
+                            font-size: 12px;
+                            color: black;
+                            display: none;
+                        }
+                        .itemIsActive{
+                            display: block;
+                            animation: fadeEffect 0.6s ease;             
+                        }
+                      
+                    }
+                    .formations{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-around; 
+                        height: 50%;
+                    }
+                    .experiences{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        height: 50%;
+                    }
+                }
                 .content{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-evenly;
-                    padding: 5px;
+                    padding: 30px;
+                    height: 100%;
+                    .hardSkills{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around; 
+                        height: 50%;
+                        .bar {
+                            width: 100%;
+                            height: 10px;
+                            background-color: #ddd;
+                            margin: 5px 0px;
+                            .skills {
+                                height: 10px;
+                                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;;
+                              }
+                              .HTML {
+                                  width: 90%; 
+                                  background-color: #ff9f43;
+                                  animation: fillBarHTML 1s ease-in-out;   
+                              }
+                              .SCSS{
+                                width: 70%;
+                                background: #ff9ff3;
+                                animation: fillBarSCSS 1s ease-in-out;
+                              }
+                              .JS{
+                                width: 65%;
+                                background: #f9ca24;
+                                animation: fillBarJS 1s ease-in-out; 
+                              }
+                              .ANGULAR{
+                                  width: 50%;
+                                  background: rgb(235, 11, 11);
+                                animation: fillBarANGULAR 1s ease-in-out;
+                              }
+                              .VUE{
+                                  width: 30%;
+                                  background: #10ac84;
+                                  animation: fillBarVUE 1s ease-in-out;
+                              }
+                              .BOOTSTRAP{
+                                  width: 80%;
+                                  background: #8854d0;
+                                  animation: fillBarBOOTSTRAP 1S ease-in-out;
+                              }
+                        
+                          }
+                    }
                     .softSkills{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        height: 40%;
                         &__title{
                             margin-top: 20px;
                         }
                         &__container{
-                            height: 80px;
                             display: flex;
                             flex-wrap: wrap;
                             justify-content: space-around;
@@ -62,8 +164,7 @@
                                 padding: 10px;
                                 font-weight: 800;
                                 background-color: white;
-                                color: black
-                             /*    color: $primary */;
+                                color: black;
                                 box-shadow: $cardBoxShadow;
                             }
                         }
@@ -76,77 +177,43 @@
                 }
             }
           }
-    }
-    &__right{
-        width: 40%;
+    
+    .me{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        .content{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            img{
-                height: 400px;
-                width: 400px;
-                opacity: 0.8;
-                object-fit: cover;
-                box-shadow: $cardBoxShadow;
-                clip-path: circle(47.8% at 50% 50%);
-            }
+        justify-content: space-evenly;
+        width: 40%;
+        padding: 30px;
+            .img{
+                filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+                img{
+                    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+                    height: 15vw;
+                    width: 15vw;
+                    max-height: 250px;
+                    max-width: 250px;
+                    object-fit: cover;
+                }
+            }  
         
-        }
         p{
             font-family: $roboto;
             color: white;
-            text-align: center;
-            font-size: 18px;
+            text-align: justify;
+            text-justify: inter-word;
+            font-size: 14px;
+            line-height: 25px;
+        }
+        span{
+            background: $primary;
+            color: white;
+            padding: 2px;
         }
     } 
 }
 
-.bar {
-    width: 100%;
-    background-color: #ddd;
-    margin: 5px 0px;
-    .skills {
-        height: 8px;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;;
-      }
-      .HTML {
-          width: 90%; 
-          background-color: #ff9f43;
-          animation: fillBarHTML 1s ease-in-out;   
-      }
-      .SCSS{
-        width: 70%;
-        background: #ff9ff3;
-        animation: fillBarSCSS 1s ease-in-out;
-      }
-      .JS{
-        width: 65%;
-        background: #f9ca24;
-        animation: fillBarJS 1s ease-in-out; 
-      }
-      .ANGULAR{
-          width: 50%;
-          background: rgb(235, 11, 11);
-        animation: fillBarANGULAR 1s ease-in-out;
-      }
-      .VUE{
-          width: 30%;
-          background: #10ac84;
-          animation: fillBarVUE 1s ease-in-out;
-      }
-      .BOOTSTRAP{
-          width: 80%;
-          background: #8854d0;
-          animation: fillBarBOOTSTRAP 1S ease-in-out;
-      }
 
-  }
 @keyframes fillBarHTML{
     from{
         opacity: 0;
@@ -219,23 +286,39 @@ to {
 }
 }
 
-@media screen and (max-width: 1100px) {
-    
-}
 @media screen and (max-width: 900px) {
     .about{
         flex-direction: column-reverse;
-        align-items: center;
-        &__left{
-            width: 100%;
+        .tab{
+            width: 80%;
         }
-        &__right{
-            .content{
+        .me{
+            height: 100%;
+            padding: 0;
+            flex-direction: row;
+            p{
+              display: none;     
+            }
+            .img{
                 img{
-                    height: 250px;
-                    width: 250px;
+                    height: 150px;
+                    width: 300px;
                 }
-            }     
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .about{
+        .tab{
+            height: 80vh;
+            width: 90%;
+            .item{
+                padding: 10px;
+            }
+        }
+        .me{
+            display: none; 
         }
     }
 }

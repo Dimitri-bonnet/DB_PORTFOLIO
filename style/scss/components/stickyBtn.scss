@@ -1,20 +1,19 @@
-.stickyBtnContact{
+.stickyBtnContact{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   bottom: 20px;
   right:20px;
-  background-color: #ffffff;
+  background-color:$tertiary;
   border: none;
- /*  color: white; */
-  color: $primary;
-  padding: 20px;
-  border-radius: 50%;
+  color: white;
+  padding: 10px;
   cursor: pointer;
+  transition: all 0.6s ease;
   &:hover{
-      transform: scale(1.1);
-      i{
-          color: $tertiary;
-          /* color:white; */
-      }
+    background-color: $secondary;
+    transform:  translateX(5px) scale(1.2);
   }
 }
 

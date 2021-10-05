@@ -6,18 +6,17 @@ class About {
         console.log('init aboute me');
         const btnsTab = document.querySelectorAll(".tab__action button")
         const itemsTab = document.querySelectorAll(".tab__item")
-
         btnsTab.forEach((btn) => {
             itemsTab[1].style.display = " none"
             btnsTab[0].classList.add("active")
             btn.addEventListener("click", (e) => {
                 const tabName = e.target.value
-                this.openTab(e, tabName)
+                this.switchTab(e, tabName)
             })
         })
-          
+        this.openItem()
     }
-    openTab = (e, tab) => {
+    switchTab = (e, tab) => {
         const btnsTab = document.querySelectorAll(".tab__action button")
         const itemsTab = document.querySelectorAll(".tab__item")
         itemsTab.forEach((tab) => {
@@ -28,12 +27,28 @@ class About {
         })
         document.getElementById(tab).style.display = "block"
         e.currentTarget.className += 'active'
-    }  
+    }
+    openItem() {
+        const items = document.querySelectorAll('.content__parcours .item')
+        const itemsHidden = document.querySelectorAll('.item__hidden')
+        items.forEach((item) => {
+            item.addEventListener('click', () => {
+                //Je vérifie si item a un enfant
+                if (item.children[1]) {
+                    if(item.children[1].classList.contains('itemIsActive')){
+                        item.children[1].classList.remove('itemIsActive')
+                    } else {
+                        itemsHidden.forEach((i) => {
+                            i.classList.remove('itemIsActive')
+                        })
+                        item.children[1].classList.add('itemIsActive')
+                    }
+                }
+            })
+        })
+    }
 }
-(async function () {
-    const about = new About()
-    /* about.init() */
-})();
+
 
 
 

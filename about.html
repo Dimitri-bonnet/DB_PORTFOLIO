@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,16 +10,19 @@
     <link rel="stylesheet" type="text/css" href="style/css/style.css" />
     <title>Parcours</title>
 </head>
+
 <body>
     <header>
         <nav>
-            <a href="/index.html" class="brand">
-                <i class="fas fa-dungeon fa-2x"></i>
-                <div class="me">
-                    <h1>BONNET DIMITRI</h1>
-                    <h2>DEVELOPPEUR FRONT-END</h2>
-                </div>
-            </a>
+            <div class="brand">
+                <a href="/index.html">
+                    <i class="fas fa-dungeon fa-2x"></i>
+                    <div class="me">
+                        <h1>BONNET DIMITRI</h1>
+                        <h2>DEVELOPPEUR FRONT-END</h2>
+                    </div>
+                </a>
+            </div>
             <div class="nav">
                 <ul>
                     <li>
@@ -31,41 +35,28 @@
                         <a href="/portfolio.html">
                             PORTFOLIO
                         </a>
-
                     </li>
-                    <div class="icon">
-                        <li>
-                            <a href="https://github.com/Dimitri-bonnet" target="_blank">
-                                <i class="fab fa-github fa-lg"></i>
-                            </a>
-
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/dimitri-bonnet18/" target="_blank">
-                                <i class="fab fa-linkedin-in fa-lg"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fas fa-file"></i></a>
-                        </li>
-                    </div>
                 </ul>
             </div>
-
+            <div class="icons">
+                <a href="https://github.com/Dimitri-bonnet" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/dimitri-bonnet18/" target="_blank" ><i class="fab fa-linkedin-in fa-lg"></i></a>
+                <a href="/assets/pdf/cv_DB.pdf" target="_blank"><p>CV</p></a>
+            </div>
             <div class="hamburger">
                 <span class="line"></span>
                 <span class="line"></span>
             </div>
             <div class="responsiveNav">
                 <div class="responsiveNav__header">
-                    <a href=""><i class="fab fa-github fa-lg"></i></a>
-                    <a href=""><i class="fab fa-linkedin-in fa-lg"></i></a>
-                    <a href=""><i class="fas fa-file"></i></a>
+                    <a href="https://github.com/Dimitri-bonnet" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/dimitri-bonnet18/" target="_blank" ><i class="fab fa-linkedin-in fa-lg"></i></a>
+                    <a href="/assets/pdf/cv_DB.pdf" target="_blank"><i class="fas fa-file"></i></a>
                 </div>
                 <div class="responsiveNav__items">
                     <ul>
                         <li>
-                            <a href="">A PROPOS</a>
+                            <a href="/about.html">A PROPOS</a>
                         </li>
                         <li>
                             <a href="/portfolio.html">PORTFOLIO</a>
@@ -73,44 +64,94 @@
                     </ul>
                 </div>
                 <div class="responsiveNav__footer ">
-                    <button class="om">CONTACTE</button>
+                    <button class="contact">CONTACTE</button>
                 </div>
             </div>
         </nav>
     </header>
-    <main id="swup" class="about transition-fade" >
-        <div class="about__left">
+    <main id="swup" class="about transition-fade">
             <div class="tab">
                 <div class="tab__action">
                     <button value="propos">PARCOURS</button>
                     <button value="competence">COMPETENCES</button>
                 </div>
-                <div id="propos"class="tab__item ">
-                    <div class="content">
-                        <p>
-                            Je suis un développeur front-end situé en France à Toulouse, j'ai une passion sérieuse pour les effets d'interface utilisateur, les animations et la création d'expériences utilisateur intuitives et dynamiques.</p>
-                        <p>  <br>
-                            En septembre 2019, je choisi de m'investir dans le domaine du web en obtenant un titre professionnel de développeur web et web mobile, diplômes RNCP de niveau V, que j'ai obtenu en mars 2020.
-                        <br>
-                            J'ai continué a me perfectionner en HTML, CSS (SCSS) ET JS sur une plateforme de e-learning pendant la periode du confinement (COVID19), pour me spécialiser j'ai commmencé le parcours développer front-end d'Openclassrooms (diplôme niveau VI) en décembre 2021.</p>
-                        <p> <br>
-                            Aujourd'huui je suis à la recherche d'une alternance de développeur front-end sur 12 mois en contrat de professionnalisation (1 à 2 jours de formation/semaine le reste du temps en entreprise) afin de finir et d'obtenir le diplôme “développeur d’applications”, diplôme RNCP de niveau VI avec Openclassrooms.</p>
+                <div id="propos" class="tab__item ">
+                    <div class="content__parcours">
+                        <div class="formations">
+                            <h4>FORMATIONS</h4>
+                            <div class="item">
+                                <div class="item__show">
+                                    <span><i class="fas fa-chevron-circle-down"></i></span>
+                                    <p> 2020/2022 - OpenClassRoom - Développeur d'application front-end - Diplôme RNCP
+                                        de niveau VI.</p>
+                                </div>
+                                <div class="item__hidden">
+                                    <p> - Analyser les besoins et préconiser une solution,</p>
+                                    <p> - Concevoir une solution technique,</p>
+                                    <p> - Développer une application en adéquation avec les besoins,</p>
+                                    <p> - Elaborer des plans de tests,</p>
+                                    <p> - Apporter un support technique en réalisant une documentation technique et
+                                        fonctionnelle,</p>
+                                    <p> - Mettre en œuvre une veille technologique.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item__show">
+                                    <span></span>
+                                    <p> 2020 - 2 mois - Dyma - Apprentissage et perfectionnement - VUE.JS | HTML/CSS |
+                                        GIT | JAVASCRIPT .</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item__show">
+                                    <span><i class="fas fa-chevron-circle-down"></i></span>
+                                    <p>2019/2020- 6 mois - Aformac Bourges - Titre professionnel : Développeur web et
+                                        web-mobile - Diplôme RNCP de niveau V.</p>
+                                </div>
+                                <div class="item__hidden">
+                                    <p> - Maquetter une application,</p>
+                                    <p> - Réaliser une interface utilisateur web statique et adaptable</p>
+                                    <p> - Développer une interface utilisateur web dynamique,</p>
+                                    <p> - Créer une base de données,</p>
+                                    <p> - Développer les composants d’accès aux données,</p>
+                                    <p> - Développer la partie back-end d’une application web ou web mobile. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experiences">
+                            <h4>EXPERIENCES</h4>
+                            <div class="item">
+                                <div class="item__show">
+                                    <span><i class="fas fa-chevron-circle-down"></i></span>
+                                    <p> 2020/2021 - 6 mois - Toulouse - ZeroCodeAutomation - Alternance développeur
+                                        front-end</p>
+                                </div>
+                                <div class="item__hidden">
+                                    <p> - Prise en mains du framework Angular,</p>
+                                    <p> - Maquettage (zoning et wireframe sous Adobe XD),</p>
+                                    <p> - Intégration d'une maquette responsive avec Angular.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item__show">
+                                    <span></span>
+                                    <p> 2020 - 1 mois - Bourges - DjAddict - Stagiaire développeur web et web mobile</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="competence" class="tab__item">
                     <div class="content">
+                        <div class="hardSkills">
                             <h4>SAVOIR-FAIRE</h4>
-                            <div>
-                                <p>HTML</p>
-                                <div class="bar">
-                                    <div class="skills HTML"></div>
-                                </div>
+                            <p>HTML</p>
+                            <div class="bar">
+                                <div class="skills HTML"></div>
                             </div>
-                            <div>
-                                <p>SCSS</p>
-                                <div class="bar">
-                                    <div class="skills SCSS"></div>
-                                </div>
+                            <p>SCSS</p>
+                            <div class="bar">
+                                <div class="skills SCSS"></div>
                             </div>
                             <p>JS</p>
                             <div class="bar">
@@ -122,12 +163,13 @@
                             </div>
                             <p>VUE</p>
                             <div class="bar">
-                                <div class="skills VUE"><!-- 30% --></div>
+                                <div class="skills VUE"></div>
                             </div>
                             <p>BOOTSTRAP</p>
                             <div class="bar">
-                                <div class="skills BOOTSTRAP"><!-- 80% --></div>
-                            </div> 
+                                <div class="skills BOOTSTRAP"></div>
+                            </div>
+                        </div>
                         <div class="softSkills">
                             <div class="softSkills__title">
                                 <h4>SAVOIR-ÊTRE</h4>
@@ -138,45 +180,67 @@
                                 <p>Autonome</p>
                                 <p>Créatif</p>
                             </div>
-                           
+
                         </div>
                     </div>
-            
-                </div>  
-            </div>
-        </div>
-        <div class="about__right">
-            <div class="content">
-                <img src="https://cdn.pixabay.com/photo/2017/05/13/12/40/fashion-2309519__340.jpg" alt="">
-                <div>
-                    <p>"possimus tenetur odit quod libero facere consectetur Culpa accusantium"</p>
+
                 </div>
             </div>
-            
-        </div>
+            <div class="me">
+                <div class="img">
+                    <img src="https://cdn.pixabay.com/photo/2017/05/13/12/40/fashion-2309519__340.jpg" alt="">
+                </div>
+                <div>
+                    <!-- <p>
+                        Je suis un développeur front-end situé en France à Toulouse, j'ai une passion sérieuse pour les
+                        effets d'interface utilisateur, les animations et la création d'expériences utilisateur
+                        intuitives et dynamiques.</p> -->
+                    <p> <br>
+                        En <span>septembre 2019</span>, je choisi de m'investir dans le domaine du web en obtenant un
+                        titre
+                        professionnel de <span>développeur web et web mobile</span>, diplômes RNCP de niveau V, que j'ai
+                        obtenu en
+                        mars 2020. 
+                    </p>  <br>
+                    <p> J'ai continué a me perfectionner en HTML, CSS (SCSS) ET JS sur une plateforme de e-learning
+                        (DYMA)
+                        pendant la periode du confinement (COVID19) et en <span>décembre 2021</span> j'ai commmencé le
+                        parcours
+                        <span>développeur front-end</span> d'Openclassrooms (diplôme niveau VI) .</p>
+                    <p> <br>
+                        Aujourd'hui je suis à la recherche d'une <span>alternance</span> de développeur front-end sur 12
+                        mois en
+                        contrat de professionnalisation (1 à 2 jours de formation/semaine le reste du temps en
+                        entreprise) afin de finir et d'obtenir le diplôme “développeur d’applications”, diplôme RNCP de
+                        niveau VI avec <span>Openclassrooms</span>.</p>
+                </div>
+            </div>
+
+     
     </main>
+    <i class="far fa-envelope fa-2x stickyBtnContact contact"></i>
     <div class="bgModal">
         <div class="modal">
-            <div class="modal__content">
+            <div class="modal__content modalAnimOpen">
                 <button class="cm"><i class="far fa-times-circle fa-2x"></i></button>
                 <div class="formModal">
                     <form action="">
-                        <h2>Contactez-moi</h2>
+                        <h2>CONTACTEZ-MOI</h2>
                         <div class="item">
                             <label for="name">Nom</label>
-                            <input class="input"  type="text" id="name" name="name">
+                            <input class="input" type="text" id="name" name="name">
                         </div>
                         <div class="item">
                             <label for="firstName">Prénom</label>
-                            <input class="input"  type="text" id="firstName" name="firstName">
+                            <input class="input" type="text" id="firstName" name="firstName">
                         </div>
                         <div class="item">
                             <label for="email">Email</label>
-                            <input class="input"  type="text" id="email" name="email">
+                            <input class="input" type="text" id="email" name="email">
                         </div>
-                        <div class="item"> 
+                        <div class="item">
                             <label for="objet">Objet</label>
-                            <input class="input"   type="text" id="objet" name="objet">
+                            <input class="input" type="text" id="objet" name="objet">
                         </div>
                         <div class="item">
                             <label for="message">Message</label>
@@ -193,41 +257,19 @@
             </div>
         </div>
     </div>
-   <!--  <div class="stickyBtnContact">
-        <button class="om">
-            <i class="far fa-envelope fa-2x"></i>
-        </button>
-    </div>
-    <div class="bgModal">
-        <div class="modal">
-            <div class="modal__content">
-                <button class="cm"><i class="fas fa-times fa-2x"></i></button>
-            </div>
-        </div>
-    </div> -->
-    <!-- <div class="bgLoader">
-        <div class="loader">
-            <div class="loader__content">
-                <img src="/assets/svgs/logo.svg" alt="">
-                <div class="blops">
-                    <div class="blop"></div>
-                    <div class="blop"></div>
-                    <div class="blop"></div>
-                </div>
-               
-            </div>
-        </div>
-    </div> -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="node_modules/swup/dist/swup.js"></script>
-    <script src="js/transition.js"></script>
-    <script src="js/modal.js"></script>
-    <script src="js/service.js"></script>
+    <script src="js/swup/transition.js"></script>
+    <script src="js/components/nav.js"></script>
+    <script src="js/components/modal.js"></script>
+    <script src="js/services/service.js"></script>
     <script src="js/models/project.js"></script>
     <script src="/js/pages/home.js"></script>
     <script src="js/pages/about.js"></script>
     <script src="js/pages/portfolio.js"></script>
+    <script src="js/components/form.js"></script>
     <script src="js/generique.js"></script>
     <script src="js/components/sliderDarg.js"></script>
-    <script src="js/components/form.js"></script>
 </body>
+
 </html>

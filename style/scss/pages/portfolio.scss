@@ -2,9 +2,7 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: center;
    height: 90vh;
-   width: 100vw;
    .slideshow-container {
       width: 100%;
       height: 80%;
@@ -20,9 +18,7 @@
          position: absolute;
          display: flex;
          align-items: center;
-         /* background-color: yellow; */
          .slide {
-        /*     background-color: yellowgreen; */
             z-index: 99;
             flex-shrink: 0;
             background-size: cover;
@@ -30,12 +26,11 @@
             position: relative;
             user-select: none;
             width: 40vw;
-            min-width: 350px;
+           /*  height: 100%; */
             height: 600px;
             padding: 30px;
-            opacity: 0.5;
             transition: all 0.6s ease;
-            opacity: 0.5;
+            opacity: 1;
             &:hover{
                opacity: 1;
                button{
@@ -71,38 +66,25 @@
        .cursorDrag{
           display: none;
        }
-      /*  &:hover{
-         .cursorDrag{
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            position: absolute;
-            animation: Anim1 1s infinite alternate;
-            pointer-events: none;
-            background-color: $primary;
-            font-size: 14px;
-            font-weight: 800;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
-            color: white;
-            font-family: $raleWay;
-            z-index: 99;
-          }
-       }    */
     }
-    .slideBar{
-       height: 5px;
-       width: 80%;
-       background-color: gray;
-       &__bar{
-          height: 5px;
-          width: 20%;
-          background-color: $tertiary;
-       }
+    &__bar{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 20%;
+       width: 100%;
+       .slideBar{
+        height: 8px;
+        width: 80%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: $cardBoxShadow;
+         &__bar{
+            height: 8px;
+            background: #009fe3;
+         }
+      }
     }
+    
 }
 
 
@@ -112,10 +94,21 @@
    left: 0;
    right: 0;
    bottom: 0;
-   background: rgba(0, 0, 0, 0.15);
+   background: rgba(0, 0, 0, 0.315);
  }
 
 
  
 
 
+ @media screen and (max-width: 900px) {
+   .portfolio{
+      .slideshow-container{
+         .slideshow{
+            .slide{
+               width: 100vw;
+            }
+         }
+      }
+   }
+}

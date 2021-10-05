@@ -2,8 +2,8 @@ class Home{
     constructor(){}
     init(){
         console.log('init homePage');
-        const textAnim = document.querySelector('h3');
-console.log(textAnim);
+       /*  const textAnim = document.querySelector('h3');
+            console.log(textAnim);
         new Typewriter(textAnim, {
             deleteSpeed: 20
         })
@@ -23,13 +23,13 @@ console.log(textAnim);
         .deleteChars(18)
         .pauseFor(200)
         .typeString(`<strong>FRONT-END !</strong>`)
-        .start()
+        .start() */
     }  
 }
 
 (async function () {
     const home = new Home()
-    home.init()
+  /*   home.init() */
 })();
 
 

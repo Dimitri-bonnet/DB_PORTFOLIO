@@ -14,13 +14,15 @@
 <body>
     <header>
         <nav>
-            <a href="/index.html" class="brand">
-                <i class="fas fa-dungeon fa-2x"></i>
-                <div class="me">
-                    <h1>BONNET DIMITRI</h1>
-                    <h2>DEVELOPPEUR FRONT-END</h2>
-                </div>
-            </a>
+            <div class="brand">
+                <a href="/index.html">
+                    <i class="fas fa-dungeon fa-2x"></i>
+                    <div class="me">
+                        <h1>BONNET DIMITRI</h1>
+                        <h2>DEVELOPPEUR FRONT-END</h2>
+                    </div>
+                </a>
+            </div>
             <div class="nav">
                 <ul>
                     <li>
@@ -33,41 +35,28 @@
                         <a href="/portfolio.html">
                             PORTFOLIO
                         </a>
-
                     </li>
-                    <div class="icon">
-                        <li>
-                            <a href="https://github.com/Dimitri-bonnet" target="_blank">
-                                <i class="fab fa-github fa-lg"></i>
-                            </a>
-
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/dimitri-bonnet18/" target="_blank">
-                                <i class="fab fa-linkedin-in fa-lg"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fas fa-file"></i></a>
-                        </li>
-                    </div>
                 </ul>
             </div>
-
+            <div class="icons">
+                <a href="https://github.com/Dimitri-bonnet" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/dimitri-bonnet18/" target="_blank" ><i class="fab fa-linkedin-in fa-lg"></i></a>
+                <a href="/assets/pdf/cv_DB.pdf" target="_blank"><p>CV</p></a>
+            </div>
             <div class="hamburger">
                 <span class="line"></span>
                 <span class="line"></span>
             </div>
             <div class="responsiveNav">
                 <div class="responsiveNav__header">
-                    <a href=""><i class="fab fa-github fa-lg"></i></a>
-                    <a href=""><i class="fab fa-linkedin-in fa-lg"></i></a>
-                    <a href=""><i class="fas fa-file"></i></a>
+                    <a href="https://github.com/Dimitri-bonnet" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/dimitri-bonnet18/" target="_blank" ><i class="fab fa-linkedin-in fa-lg"></i></a>
+                    <a href="/assets/pdf/cv_DB.pdf" target="_blank"><i class="fas fa-file"></i></a>
                 </div>
                 <div class="responsiveNav__items">
                     <ul>
                         <li>
-                            <a href="">A PROPOS</a>
+                            <a href="/about.html">A PROPOS</a>
                         </li>
                         <li>
                             <a href="/portfolio.html">PORTFOLIO</a>
@@ -75,7 +64,7 @@
                     </ul>
                 </div>
                 <div class="responsiveNav__footer ">
-                    <button class="om">CONTACTE</button>
+                    <button class="contact">CONTACTE</button>
                 </div>
             </div>
         </nav>
@@ -83,17 +72,19 @@
     <main id="swup" class="portfolio transition-fade">
       <div class="slideshow-container">
         <div class="slideshow"></div>
-        <!-- <div class="cursorDrag">DRAG</div> -->
       </div>
-      <div class="slideBar">
-          <div class="slideBar__bar">
-          </div>
+      <div class="portfolio__bar">
+        <div class="slideBar">
+            <div class="slideBar__bar"></div>
+        </div>
       </div>
+      
     </main>
+    <i class="far fa-envelope fa-2x stickyBtnContact contact"></i>
     <div class="bgModal">
         <div class="modal">
             <div class="modal__content modalAnimOpen">
-                <button class="cm"><i class="far fa-times-circle fa-x2"></i></button>
+                <button class="cm"><i class="far fa-times-circle fa-2x"></i></button>
                 <div class="formModal">
                     <form action="">
                         <h2>CONTACTEZ-MOI</h2>
@@ -128,17 +119,19 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="node_modules/swup/dist/swup.js"></script>
-    <script src="js/transition.js"></script>
-    <script src="js/modal.js"></script>
-    <script src="js/service.js"></script>
+    <script src="js/swup/transition.js"></script>
+    <script src="js/components/nav.js"></script>
+    <script src="js/components/modal.js"></script>
+    <script src="js/services/service.js"></script>
     <script src="js/models/project.js"></script>
     <script src="/js/pages/home.js"></script>
     <script src="js/pages/about.js"></script>
     <script src="js/pages/portfolio.js"></script>
+    <script src="js/components/form.js"></script>
     <script src="js/generique.js"></script>
     <script src="js/components/sliderDarg.js"></script>
-    <script src="js/components/form.js"></script>
 </body>
 
 </html>

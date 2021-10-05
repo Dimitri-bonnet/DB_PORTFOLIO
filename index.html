@@ -12,15 +12,20 @@
 </head>
 
 <body>
+   <!--  <video autoplay muted loop id="myVideo">
+        <source src="assets/background/video/Ink - 58193.mp4" type="video/mp4">
+    </video> -->
     <header>
         <nav>
-            <a href="/index.html" class="brand">
-                <i class="fas fa-dungeon fa-2x"></i>
-                <div class="me">
-                    <h1>BONNET DIMITRI</h1>
-                    <h2>DEVELOPPEUR FRONT-END</h2>
-                </div>
-            </a>
+            <div class="brand">
+                <a href="/index.html">
+                    <i class="fas fa-dungeon fa-2x"></i>
+                    <div class="me">
+                        <h1>BONNET DIMITRI</h1>
+                        <h2>DEVELOPPEUR FRONT-END</h2>
+                    </div>
+                </a>
+            </div>
             <div class="nav">
                 <ul>
                     <li>
@@ -33,25 +38,13 @@
                         <a href="/portfolio.html">
                             PORTFOLIO
                         </a>
-
                     </li>
-                    <div class="icon">
-                        <li>
-                            <a href="https://github.com/Dimitri-bonnet" target="_blank">
-                                <i class="fab fa-github fa-lg"></i>
-                            </a>
-
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/dimitri-bonnet18/" target="_blank" >
-                                <i class="fab fa-linkedin-in fa-lg"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/assets/pdf/cv_DB.pdf" target="_blank"><i class="fas fa-file"></i></a>
-                        </li>
-                    </div>
                 </ul>
+            </div>
+            <div class="icons">
+                <a href="https://github.com/Dimitri-bonnet" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/dimitri-bonnet18/" target="_blank" ><i class="fab fa-linkedin-in fa-lg"></i></a>
+                <a href="/assets/pdf/cv_DB.pdf" target="_blank"><p>CV</p></a>
             </div>
             <div class="hamburger">
                 <span class="line"></span>
@@ -81,7 +74,13 @@
     </header>
     <main id="swup" class="home transition-fade ">
         <div class="home__header">
-            <h3></h3>
+            <div class="content">
+                <div class="content__text">
+                    <p>BIENVENUE SUR MON</p>
+                    <h1>PORTFOLIO</h1>
+                    <h3>JE SUIS BONNET DIMITRI, DEVELOPPEUR <span>FRONT-END</span></h3>
+                </div>
+            </div>
         </div>
         <div class="home__main">
             <div class="card card1">
@@ -124,8 +123,6 @@
             </div>
         </div>
     </main>
-
-
     <i class="far fa-envelope fa-2x stickyBtnContact contact"></i>
     <div class="bgModal">
         <div class="modal">
@@ -165,19 +162,24 @@
             </div>
         </div>
     </div>
+   
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="node_modules/swup/dist/swup.js"></script>
-    <script src="js/transition.js"></script>
-    <script src="js/nav.js"></script>
-    <script src="js/modal.js"></script>
-    <script src="js/service.js"></script>
-    <script src="js/models/project.js"></script>
     <script src="/js/pages/home.js"></script>
     <script src="js/pages/about.js"></script>
     <script src="js/pages/portfolio.js"></script>
+    <script src="js/components/modal.js"></script>
+
+    <script src="js/components/nav.js"></script>
+
+    <script src="js/services/service.js"></script>
+    <script src="js/models/project.js"></script>
+
+  
     <script src="js/components/form.js"></script>
     <script src="js/generique.js"></script>
     <script src="js/components/sliderDarg.js"></script>
+    <script src="js/swup/transition.js"></script>
 
 </body>
 
