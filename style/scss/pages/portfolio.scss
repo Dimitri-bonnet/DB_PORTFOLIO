@@ -5,7 +5,7 @@
    height: 90vh;
    .slideshow-container {
       width: 100%;
-      height: 80%;
+      height: 100%;
       overflow: hidden;
       position: relative;
       display: flex;
@@ -19,6 +19,9 @@
          display: flex;
          align-items: center;
          .slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             z-index: 99;
             flex-shrink: 0;
             background-size: cover;
@@ -26,19 +29,21 @@
             position: relative;
             user-select: none;
             width: 40vw;
-           /*  height: 100%; */
             height: 600px;
             padding: 30px;
-            transition: all 0.6s ease;
-            opacity: 1;
+            transition: all 0.4s ease;
+            opacity: 0.8;
             &:hover{
                opacity: 1;
                button{
-                  background: $secondary;
+                  background: black;
                   padding: 12px 18px;
                }
             }
             img{
+               display: flex;
+               justify-content: center;
+               align-items: center;
                pointer-events: none;
                width: 100%;
                height: 100%;
@@ -48,7 +53,7 @@
                transition: padding 1s ease;
                border: none;
                padding: 10px 15px;
-               background-color:$tertiary;
+               background-color:black;
                color: rgb(255, 255, 255);
                position: absolute;
                font-weight: 800;
@@ -59,35 +64,28 @@
                font-family: $raleWay;
                font-size: 15px;
                letter-spacing: 2px;
-               box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-            }
+           }
          }
-       }
-       .cursorDrag{
-          display: none;
        }
     }
     &__bar{
        display: flex;
        align-items: center;
        justify-content: center;
-       height: 20%;
+       height: 10%;
        width: 100%;
        .slideBar{
-        height: 8px;
+        height: 3px;
         width: 80%;
-        background-color: rgb(255, 255, 255);
-        box-shadow: $cardBoxShadow;
+        background-color: rgba(0, 0, 0, 0.4);
          &__bar{
-            height: 8px;
-            background: #009fe3;
+            height: 3px;
+            background: rgba(255, 255, 255, 0.4);
          }
       }
     }
     
 }
-
-
  .overlay {
    position: absolute;
    top: 0;

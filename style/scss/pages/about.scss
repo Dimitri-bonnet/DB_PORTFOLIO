@@ -9,12 +9,13 @@
             height: 600px;
             width: 50%;
             overflow: hidden;
-            box-shadow: $cardBoxShadow;
-            background: linear-gradient($primary, #91a7e5);
+          /*   box-shadow: $cardBoxShadow; */
+          /*   background: linear-gradient($primary, #91a7e5); */
             color: white;
             &__action{
                 display: flex;
                 button{
+                    background: rgba(0, 0, 0, 0.5);
                     width: 100%;
                     border: none;
                     outline: none;
@@ -23,13 +24,20 @@
                     font-family: $raleWay;
                     font-size: 16px;
                     letter-spacing: 2px;
+                    color: white; 
+                     transition: background 0.5s ease-in-out;
+                    &:hover:not(.active){
+                        background: rgba(0, 0, 0, 1);
+                    }
                 }
                 .active{
+                    color: white;
                     transition: background 0.5s ease-in-out;
-                    color:white;
                     font-weight: 800;
                     background: $primary;
                     margin-bottom: -5px;
+                    box-shadow: $cardBoxShadow; 
+                  
                 }
             }
             &__item{
@@ -57,12 +65,16 @@
                             justify-content: space-between;
                             cursor: pointer;
                             height: 40px;
+                            transition: all 0.4 ease;
                             span{
                                 width: 10%;
                                 display: flex;
                                 justify-content: center;
                                 i{
                                     color: $secondary;
+                                }
+                                .fa-chevron-circle-up{
+                                    display: none;
                                 }
                             }
                             p{
@@ -80,7 +92,11 @@
                             display: block;
                             animation: fadeEffect 0.6s ease;             
                         }
-                      
+                        &:hover{
+                            i{
+                                color: $tertiary;
+                            }
+                        }
                     }
                     .formations{
                         display: flex;
@@ -103,14 +119,14 @@
                         display: flex;
                         flex-direction: column;
                         justify-content: space-around; 
-                        height: 50%;
+                        height: 60%;
                         .bar {
                             width: 100%;
-                            height: 10px;
+                            height: 6px;
                             background-color: #ddd;
                             margin: 5px 0px;
                             .skills {
-                                height: 10px;
+                                height: 6px;
                                 box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;;
                               }
                               .HTML {
@@ -143,6 +159,11 @@
                                   background: #8854d0;
                                   animation: fillBarBOOTSTRAP 1S ease-in-out;
                               }
+                              .PAO{
+                                  width: 60%;
+                                  background: rgb(23, 80, 202);
+                                  animation: fillBarPAO 1S ease-in-out;
+                              }
                         
                           }
                     }
@@ -161,11 +182,11 @@
                             align-items: center;
                             p{
                                 text-align: center;
+                                width: 20%;
                                 padding: 10px;
                                 font-weight: 800;
-                                background-color: white;
+                                background-color: rgb(255, 255, 255);
                                 color: black;
-                                box-shadow: $cardBoxShadow;
                             }
                         }
                     }
@@ -206,9 +227,9 @@
             line-height: 25px;
         }
         span{
-            background: $primary;
+         /*    background: $primary;
             color: white;
-            padding: 2px;
+            padding: 2px ;*/
         }
     } 
 }
@@ -272,6 +293,16 @@
     to{
         opacity: 1;
         width: 80%;
+    }
+}
+@keyframes fillBarPAO{
+    from{
+        opacity: 0;
+        width: 0%;
+    }
+    to{
+        opacity: 1;
+        width: 60%;
     }
 }
 

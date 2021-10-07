@@ -17,7 +17,7 @@
 }
 .portfolio .slideshow-container {
   width: 100%;
-  height: 80%;
+  height: 100%;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -33,6 +33,9 @@
   align-items: center;
 }
 .portfolio .slideshow-container .slideshow .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 99;
   flex-shrink: 0;
   background-size: cover;
@@ -40,20 +43,22 @@
   position: relative;
   user-select: none;
   width: 40vw;
-  /*  height: 100%; */
   height: 600px;
   padding: 30px;
-  transition: all 0.6s ease;
-  opacity: 1;
+  transition: all 0.4s ease;
+  opacity: 0.8;
 }
 .portfolio .slideshow-container .slideshow .slide:hover {
   opacity: 1;
 }
 .portfolio .slideshow-container .slideshow .slide:hover button {
-  background: #7d00e3;
+  background: black;
   padding: 12px 18px;
 }
 .portfolio .slideshow-container .slideshow .slide img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   pointer-events: none;
   width: 100%;
   height: 100%;
@@ -63,7 +68,7 @@
   transition: padding 1s ease;
   border: none;
   padding: 10px 15px;
-  background-color: #44bd32;
+  background-color: black;
   color: white;
   position: absolute;
   font-weight: 800;
@@ -74,27 +79,22 @@
   font-family: "Raleway", sans-serif;
   font-size: 15px;
   letter-spacing: 2px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-.portfolio .slideshow-container .cursorDrag {
-  display: none;
 }
 .portfolio__bar {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 20%;
+  height: 10%;
   width: 100%;
 }
 .portfolio__bar .slideBar {
-  height: 8px;
+  height: 3px;
   width: 80%;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .portfolio__bar .slideBar__bar {
-  height: 8px;
-  background: #009fe3;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .overlay {
@@ -146,7 +146,7 @@
   letter-spacing: 1px;
 }
 .home__header .content__text h3 span {
-  color: #44bd32;
+  /*  color: $tertiary; */
   font-weight: 800;
 }
 .home__main {
@@ -257,65 +257,6 @@ header nav {
   /*  justify-content: space-around; */
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   text-decoration: none;
-  /*   display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 10vh;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
-  /*  .brand{
-       margin-right: 40px;
-       text-decoration: none;
-       display: flex;
-       align-items: center;
-       justify-content: space-between;
-       color: white;
-       .me{
-           margin-left: 30px;
-           font-family: $raleWay;
-           font-size: 15px;
-           letter-spacing: 2px;
-           h2{ 
-              font-size: 10px;
-              letter-spacing: 3.5px;
-           }
-       }
-   }  */
-  /* .nav{
-      ul{
-          display: flex;
-          list-style: none;
-          font-family: 'Raleway', sans-serif;
-          li{
-              position: relative;
-              letter-spacing: 2px;
-              font-weight: 600;
-              margin-left: 10px;
-                  &::before{
-                  content: '';
-                  position: absolute; 
-                  bottom:  0;
-                  width: 100%;
-                  height: 4px;
-                  margin-bottom: -5px;
-                  background-color:$tertiary;
-                  transform-origin: 100% 0;
-                  transform: scaleX(0);
-                  transition: transform  0.3s;
-                  }
-                  &:hover::before {
-                  transform: scaleX(1);
-                  transform-origin: 0 0;
-                  background-color: $secondary;
-                  }
-              a{
-                  color: white;
-                  text-decoration: none;
-              }
-
-          }
-      } 
-  } */
 }
 header nav a {
   color: white;
@@ -327,7 +268,7 @@ header nav .brand {
   align-items: center;
 }
 header nav .brand a {
-  width: 100%;
+  width: 250px;
   display: flex;
   align-items: center;
   margin-left: 10px;
@@ -342,7 +283,7 @@ header nav .brand a .me {
 header nav .brand a .me h2 {
   font-size: 10px;
   letter-spacing: 2.5px;
-  color: #7d00e3;
+  /*  color: $secondary; */
 }
 header nav .nav {
   width: 40%;
@@ -398,7 +339,6 @@ header nav .icons {
   display: flex;
   align-items: center;
   justify-content: center;
-  /*   background-color: chocolate; */
 }
 header nav .icons a {
   display: flex;
@@ -484,10 +424,7 @@ header nav .hamburger, header nav .responsiveNav {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 30%;
     margin: 0 10px;
-    background-color: #009fe3;
     color: white;
     text-decoration: none;
     transition: all 0.6s ease;
@@ -499,7 +436,6 @@ header nav .hamburger, header nav .responsiveNav {
     text-align: center;
   }
   header nav .responsiveNav__header a:hover {
-    background-color: #7d00e3;
     transform: translateX(5px) scale(1.2);
   }
   header nav .responsiveNav__items {
@@ -636,32 +572,19 @@ html.is-animating .transition-title {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  background-color: #44bd32;
+  /*   background-color:white; */
   border: none;
-  color: white;
-  padding: 10px;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.4);
   cursor: pointer;
-  transition: all 0.6s ease;
-  animation: spin 1s infinite;
+  padding: 20px 50px;
+  transition: all 0.4s ease;
 }
 .stickyBtnContact:hover {
-  background-color: #7d00e3;
-  transform: translateX(5px) scale(1.2);
+  color: white;
+  border-color: white;
 }
 
-/* @media screen and (max-width: 900px) {
-  .stickyBtnContact{
-    display: none;
-  }
-}
-@keyframes spin {
-    from{
-      transform: rotate(0deg);
-    }
-    to{
-      transform: rotate(360deg);
-    }
-} */
 .about {
   display: flex;
   justify-content: space-evenly;
@@ -673,14 +596,15 @@ html.is-animating .transition-title {
   height: 600px;
   width: 50%;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  background: linear-gradient(#009fe3, #91a7e5);
+  /*   box-shadow: $cardBoxShadow; */
+  /*   background: linear-gradient($primary, #91a7e5); */
   color: white;
 }
 .about .tab__action {
   display: flex;
 }
 .about .tab__action button {
+  background: rgba(0, 0, 0, 0.5);
   width: 100%;
   border: none;
   outline: none;
@@ -689,13 +613,19 @@ html.is-animating .transition-title {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
+  color: white;
+  transition: background 0.5s ease-in-out;
+}
+.about .tab__action button:hover:not(.active) {
+  background: black;
 }
 .about .tab__action .active {
-  transition: background 0.5s ease-in-out;
   color: white;
+  transition: background 0.5s ease-in-out;
   font-weight: 800;
   background: #009fe3;
   margin-bottom: -5px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .about .tab__item {
   font-family: "Roboto", sans-serif;
@@ -725,6 +655,7 @@ html.is-animating .transition-title {
   justify-content: space-between;
   cursor: pointer;
   height: 40px;
+  transition: all 0.4 ease;
 }
 .about .tab__item .content__parcours .item__show span {
   width: 10%;
@@ -733,6 +664,9 @@ html.is-animating .transition-title {
 }
 .about .tab__item .content__parcours .item__show span i {
   color: #7d00e3;
+}
+.about .tab__item .content__parcours .item__show span .fa-chevron-circle-up {
+  display: none;
 }
 .about .tab__item .content__parcours .item__show p {
   font-size: 12px;
@@ -747,6 +681,9 @@ html.is-animating .transition-title {
 .about .tab__item .content__parcours .item .itemIsActive {
   display: block;
   animation: fadeEffect 0.6s ease;
+}
+.about .tab__item .content__parcours .item:hover i {
+  color: #44bd32;
 }
 .about .tab__item .content__parcours .formations {
   display: flex;
@@ -769,16 +706,16 @@ html.is-animating .transition-title {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 50%;
+  height: 60%;
 }
 .about .tab__item .content .hardSkills .bar {
   width: 100%;
-  height: 10px;
+  height: 6px;
   background-color: #ddd;
   margin: 5px 0px;
 }
 .about .tab__item .content .hardSkills .bar .skills {
-  height: 10px;
+  height: 6px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .about .tab__item .content .hardSkills .bar .HTML {
@@ -811,6 +748,11 @@ html.is-animating .transition-title {
   background: #8854d0;
   animation: fillBarBOOTSTRAP 1S ease-in-out;
 }
+.about .tab__item .content .hardSkills .bar .PAO {
+  width: 60%;
+  background: #1750ca;
+  animation: fillBarPAO 1S ease-in-out;
+}
 .about .tab__item .content .softSkills {
   display: flex;
   flex-direction: column;
@@ -828,11 +770,11 @@ html.is-animating .transition-title {
 }
 .about .tab__item .content .softSkills__container p {
   text-align: center;
+  width: 20%;
   padding: 10px;
   font-weight: 800;
   background-color: white;
   color: black;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .about .tab__item .content h4 {
   text-align: center;
@@ -867,9 +809,9 @@ html.is-animating .transition-title {
   line-height: 25px;
 }
 .about .me span {
-  background: #009fe3;
-  color: white;
-  padding: 2px;
+  /*    background: $primary;
+     color: white;
+     padding: 2px ;*/
 }
 
 @keyframes fillBarHTML {
@@ -930,6 +872,16 @@ html.is-animating .transition-title {
   to {
     opacity: 1;
     width: 80%;
+  }
+}
+@keyframes fillBarPAO {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
+    opacity: 1;
+    width: 60%;
   }
 }
 @keyframes fadeEffect {
@@ -1285,7 +1237,7 @@ body {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  background: linear-gradient(#919191, #494848);
+  background: linear-gradient(rgba(37, 39, 41, 0.918), #7c7c7c);
 }
 body #myVideo {
   z-index: -99;
