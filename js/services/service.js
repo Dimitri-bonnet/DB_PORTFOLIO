@@ -72,7 +72,7 @@ class Service {
                 ],
                 linkGit :"https://github.com/Dimitri-bonnet/DimitriBonnet_7-07-09-2021"
             },
-          /*   {
+            {
                 id: 6,
                 imgs:[""],
                 title: "DjAddict",
@@ -104,20 +104,7 @@ class Service {
                 category: "",
                 tags: [],
                 linkGit: "",
-            }, */
-            /* 
-            
-            {
-                id: 7,
-                title: "OhMyFood",
-                logo: "ohmyfood.png"
-            },
-            {
-                id: 8,
-                title: "GameOne",
-                logo: "gameon.png",
-            } */
-            
+            },        
         ]
         return dataProjects
     }

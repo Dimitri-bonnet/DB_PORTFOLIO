@@ -22,8 +22,10 @@ const unmount = () => {
 
 swup.on('willReplaceContent', unmount)
 swup.on('contentReplaced', mount);
-
 window.addEventListener('load', (event) => {
     unmount()
     mount()
 });
+/* window.addEventListener('resize', () => {
+    mount()
+}) */

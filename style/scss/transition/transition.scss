@@ -1,17 +1,22 @@
 .transition-fade {
-    transition: 0.4s;
-    opacity: 1;
-    transform: translateX(0);   
+  transition: 0.4s;
+  opacity: 1;
+  transform: translateX(0);   
 }
 html.is-animating .transition-fade {
-  opacity: 0;
-  transform: translateX(50px);
+opacity: 0;
+transform: translateX(50px);
+}
+.transition-title {
+  transition: 0.4s;
+  transform: translateX(0);
+  opacity: 1;
+}
+html.is-animating .transition-title{
+  transform: translateX(-20px);
+  opacity: 0; 
 }
 
-html.is-leaving .transition-fade{
-  opacity: 0;
-  
-}
 /* DELAY ANIMATION */
 .delay1{
  transition-delay: .2s;
@@ -20,25 +25,5 @@ html.is-leaving .transition-fade{
   transition-delay: .4s;
 }
 .delay3{
-  transition-delay: 1.6s;
+  transition-delay: .6s;
 }
-/* @media screen and (min-width: 1201px) {
-    h2{
-      color: aqua;
-    }
-    .transition-title {
-      transition: 0.4s;
-      transform: translateY(0);
-      opacity: 1;
-    }
-    
-    html.is-animating .transition-title{
-      transform: translateY(-50px);
-      opacity: 0;
-      
-    }
-    
-    html.is-leaving .transition-title{
-      opacity: 0;
-    }
-} */
