@@ -74,7 +74,7 @@ class Service {
             },
             {
                 id: 6,
-                imgs:[""],
+                imgs:["test.jpg", "test.jpg"],
                 title: "DjAddict",
                 subtitle: "",
                 logo: "djAddict.jpg",

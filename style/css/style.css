@@ -43,6 +43,7 @@
   position: relative;
   user-select: none;
   width: 40vw;
+  min-width: 550px;
   height: 600px;
   padding: 30px;
   transition: all 0.4s ease;
@@ -62,6 +63,8 @@
   pointer-events: none;
   width: 100%;
   height: 100%;
+  /*        object-fit: cover; */
+  /*    height: 100%;*/
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .portfolio .slideshow-container .slideshow .slide button {
@@ -249,12 +252,9 @@ header {
   font-size: 15px;
 }
 header nav {
-  /*    background-color: rgb(255, 255, 255); */
   height: 10vh;
   width: 100%;
   display: flex;
-  /*      justify-content: space-between; */
-  /*  justify-content: space-around; */
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   text-decoration: none;
 }
@@ -268,11 +268,10 @@ header nav .brand {
   align-items: center;
 }
 header nav .brand a {
-  width: 250px;
+  width: 280px;
   display: flex;
   align-items: center;
   margin-left: 10px;
-  /*  justify-content: center;    */
 }
 header nav .brand a .me {
   margin-left: 30px;
@@ -572,19 +571,26 @@ html.is-animating .transition-title {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  /*   background-color:white; */
   border: none;
-  border: 3px solid rgba(255, 255, 255, 0.4);
-  color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
   cursor: pointer;
-  padding: 20px 50px;
+  padding: 15px;
+  font-size: 15px;
   transition: all 0.4s ease;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: white;
+  transition: all 1s ease;
 }
 .stickyBtnContact:hover {
-  color: white;
-  border-color: white;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transform: translateX(-5px) scale(1.2);
 }
 
+@media screen and (max-width: 900px) {
+  .stickyBtnContact {
+    display: none;
+  }
+}
 .about {
   display: flex;
   justify-content: space-evenly;
