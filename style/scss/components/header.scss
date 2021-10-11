@@ -1,13 +1,18 @@
 header{
     font-family: 'Oswald', sans-serif;
     font-size: 15px;
+    .isActive{
+        position: absolute;
+        bottom:  -2px;
+        border-bottom: 2px solid $color3;
+    }
     nav{
         height: 10vh;
         width: 100%;
         display: flex;
         text-decoration: none;
         a{
-            color:$colorWhite;
+            color:$color1;
             text-decoration: none;
         }
         .brand{

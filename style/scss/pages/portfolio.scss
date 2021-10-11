@@ -54,7 +54,7 @@
                padding: 10px 15px;
                background:$actionColor;
                color: $colorWhite;
-               box-shadow: $btnShadow;
+             
                position: absolute;
                font-weight: 800;
                top:95%;
@@ -64,10 +64,10 @@
                font-family: $raleWay;
                font-size: 15px;
                letter-spacing: 2px;
+               font-weight: 600;
                transition: all 1s ease;
                &:hover{
-                  top: 94%;
-                  left: 50.5%;
+                  box-shadow: $btnShadow;
                }
            }
          }
@@ -82,7 +82,7 @@
        .slideBar{
         height: 3px;
         width: 80%;
-        background-color:$colorWhite;
+        background-color:gray;
          &__bar{
             height: 3px;
             background:$color2;

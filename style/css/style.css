@@ -68,8 +68,7 @@
   border: none;
   padding: 10px 15px;
   background: #009fe3;
-  color: #f5f6fa;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  color: #f1f2f6;
   position: absolute;
   font-weight: 800;
   top: 95%;
@@ -79,11 +78,11 @@
   font-family: "Raleway", sans-serif;
   font-size: 15px;
   letter-spacing: 2px;
+  font-weight: 600;
   transition: all 1s ease;
 }
 .portfolio .slideshow-container .slideshow .slide button:hover {
-  top: 94%;
-  left: 50.5%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .portfolio__bar {
   display: flex;
@@ -95,7 +94,7 @@
 .portfolio__bar .slideBar {
   height: 3px;
   width: 80%;
-  background-color: #f5f6fa;
+  background-color: gray;
 }
 .portfolio__bar .slideBar__bar {
   height: 3px;
@@ -115,7 +114,7 @@
 .home__header {
   display: flex;
   justify-content: center;
-  color: #f5f6fa;
+  color: #353b48;
   width: 100%;
   height: 30%;
   font-family: "Raleway", sans-serif;
@@ -136,10 +135,12 @@
   letter-spacing: 10px;
   font-size: 50px;
   font-family: "Roboto", sans-serif;
+  color: #2f3542;
 }
 .home__header .content__text h3 {
   font-size: 20px;
   letter-spacing: 1px;
+  color: #2f3640;
 }
 .home__header .content__text h3 span {
   font-weight: 800;
@@ -158,10 +159,9 @@
   height: 50vh;
   max-width: 300px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  background: linear-gradient(#2f3640, #353b48);
 }
 .home__main .card__content {
-  color: #f5f6fa;
+  color: #f1f2f6;
   padding: 20px;
   height: 60%;
 }
@@ -191,13 +191,13 @@
   height: 200px;
 }
 .home__main .card1 {
-  background: linear-gradient(#2f3640, #353b48);
+  background: linear-gradient(#353b48, #a4b0be);
 }
 .home__main .card2 {
-  background: linear-gradient(#2f3640, #353b48);
+  background: linear-gradient(#2f3640, #a4b0be);
 }
 .home__main .card3 {
-  background: linear-gradient(#2f3640, #353b48);
+  background: linear-gradient(#2f3542, #a4b0be);
 }
 
 @media screen and (max-width: 900px) {
@@ -232,6 +232,11 @@ header {
   font-family: "Oswald", sans-serif;
   font-size: 15px;
 }
+header .isActive {
+  position: absolute;
+  bottom: -2px;
+  border-bottom: 2px solid #2f3542;
+}
 header nav {
   height: 10vh;
   width: 100%;
@@ -239,7 +244,7 @@ header nav {
   text-decoration: none;
 }
 header nav a {
-  color: #f5f6fa;
+  color: #353b48;
   text-decoration: none;
 }
 header nav .brand {
@@ -551,7 +556,7 @@ html.is-animating .transition-title {
   font-size: 15px;
   transition: all 0.4s ease;
   background-color: #009fe3;
-  color: #f5f6fa;
+  color: #f1f2f6;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   transition: all 1s ease;
 }
@@ -569,7 +574,7 @@ html.is-animating .transition-title {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row-reverse;
-  color: #f5f6fa;
+  color: #353b48;
   min-height: 90vh;
 }
 .about .tab {
@@ -581,7 +586,7 @@ html.is-animating .transition-title {
   display: flex;
 }
 .about .tab__action button {
-  background: #f5f6fa;
+  background: #2f3640;
   width: 100%;
   border: none;
   outline: none;
@@ -591,12 +596,13 @@ html.is-animating .transition-title {
   font-size: 16px;
   letter-spacing: 2px;
   transition: background 0.5s ease-in-out;
+  color: #f1f2f6;
 }
 .about .tab__action button:hover:not(.active) {
   background: #009fe3;
 }
 .about .tab__action .active {
-  color: #f5f6fa;
+  color: #f1f2f6;
   transition: background 0.5s ease-in-out;
   font-weight: 800;
   background: #009fe3;
@@ -614,7 +620,7 @@ html.is-animating .transition-title {
   color: #353b48;
 }
 .about .tab__item .content__parcours h4 {
-  color: #f5f6fa;
+  color: #353b48;
   text-align: center;
   font-weight: initial;
 }
@@ -622,7 +628,8 @@ html.is-animating .transition-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #f5f6fa;
+  background-color: #353b48;
+  color: #f1f2f6;
   width: 100%;
   font-size: 14px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -747,8 +754,8 @@ html.is-animating .transition-title {
   width: 20%;
   padding: 10px;
   font-weight: 800;
-  background-color: #f5f6fa;
-  color: #353b48;
+  background-color: #2f3542;
+  color: #f1f2f6;
 }
 .about .tab__item .content h4 {
   text-align: center;
@@ -776,7 +783,7 @@ html.is-animating .transition-title {
 }
 .about .me p {
   font-family: "Roboto", sans-serif;
-  color: #f5f6fa;
+  color: #2f3542;
   text-align: justify;
   text-justify: inter-word;
   font-size: 14px;
@@ -902,7 +909,7 @@ html.is-animating .transition-title {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #f5f6fa30;
+  background-color: #353b486b;
   z-index: 99;
 }
 .bgModal .modal {
@@ -928,173 +935,6 @@ html.is-animating .transition-title {
 .bgModal .modal .modal__content .cm:hover {
   transform: translateX(5px) scale(1.2);
 }
-.bgModal .modal .formModal {
-  background-color: #f5f6fa;
-  width: 700px;
-  height: 500px;
-  padding: 40px;
-}
-.bgModal .modal .formModal form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100%;
-  font-family: "Roboto", sans-serif;
-}
-.bgModal .modal .formModal form h2 {
-  text-align: center;
-}
-.bgModal .modal .formModal form .item {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.bgModal .modal .formModal form .item label {
-  margin-bottom: 5px;
-}
-.bgModal .modal .formModal form .item input {
-  height: 30px;
-}
-.bgModal .modal .formModal form .item p {
-  font-family: "Roboto", sans-serif;
-  color: red;
-  font-size: 13px;
-}
-.bgModal .modal .formModal form button {
-  width: 150px;
-  border: none;
-  padding: 10px 12px;
-  color: white;
-  background: "";
-  cursor: pointer;
-  transition: all 0.4s ease;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  letter-spacing: 2px;
-  margin-top: 15px;
-}
-.bgModal .modal .formModal form button:hover {
-  background: "";
-  box-shadow: "";
-}
-.bgModal .modal .formModal .overlayIsValid {
-  position: absolute;
-  background: linear-gradient("", #b591e5);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 100%;
-  width: 100%;
-  z-index: 99;
-  display: none;
-}
-.bgModal .modal .formModal .overlayIsValid__content {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.bgModal .modal .formModal .overlayIsValid__content p {
-  font-family: "Raleway", sans-serif;
-  font-size: 30px;
-  font-weight: 800;
-  color: white;
-}
-.bgModal .modal .projectModal {
-  background: #353b48;
-  display: flex;
-  width: 700px;
-  height: 500px;
-}
-.bgModal .modal .projectModal .left {
-  width: 50%;
-}
-.bgModal .modal .projectModal .left img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.bgModal .modal .projectModal .right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 50%;
-  position: relative;
-  font-family: "Roboto", sans-serif;
-  z-index: 10;
-  padding: 20px;
-}
-.bgModal .modal .projectModal .right .action {
-  width: 50%;
-  display: flex;
-  justify-content: space-evenly;
-}
-.bgModal .modal .projectModal .right .action a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #009fe3;
-  font-size: 20px;
-  text-decoration: none;
-  margin-left: 10px;
-  transition: all 1s ease;
-}
-.bgModal .modal .projectModal .right .action a:hover {
-  transform: translateX(5px) scale(1.2);
-}
-.bgModal .modal .projectModal .right .bgWaveTop {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-.bgModal .modal .projectModal .right .bgWaveBottom {
-  width: 80%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-}
-.bgModal .modal .projectModal .right .title {
-  color: white;
-  font-size: 18px;
-}
-.bgModal .modal .projectModal .right .desc {
-  font-size: 15px;
-  color: white;
-  text-align: justify;
-}
-.bgModal .modal .projectModal .right .category {
-  color: white;
-  text-align: center;
-}
-.bgModal .modal .projectModal .right .tags {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
-.bgModal .modal .projectModal .right .tags__item {
-  background: #666666;
-  padding: 10px 12px;
-  color: white;
-  font-weight: 800;
-  font-size: 12px;
-}
-.bgModal .modal .projectModal .right .tags .itemCSS {
-  background-color: #2e86de;
-}
-.bgModal .modal .projectModal .right .tags .itemSCSS {
-  background-color: #ff9ff3;
-}
-.bgModal .modal .projectModal .right .tags .itemHTML {
-  background-color: #ff9f43;
-}
-.bgModal .modal .projectModal .right .tags .itemJS {
-  background-color: #f9ca24;
-}
 .bgModal .modalAnimOpen {
   animation-duration: 0.8s;
   animation-name: fadeIn;
@@ -1119,8 +959,6 @@ html.is-animating .transition-title {
   }
   .projectModal .right, .formModal .right {
     width: 100% !important;
-    /* width: 100% !important;
-    height: 100%; */
   }
   .projectModal .overlayIsValid p, .formModal .overlayIsValid p {
     text-align: center;
@@ -1205,25 +1043,242 @@ html.is-animating .transition-title {
     opacity: 0.5;
   }
 }
+.formModal {
+  display: flex;
+  background-color: #f1f2f6;
+  color: #353b48;
+  width: 700px;
+  height: 500px;
+}
+.formModal__content {
+  width: 100;
+  height: 100%;
+  display: flex;
+}
+.formModal__content .form {
+  width: 50%;
+  height: 100%;
+  padding: 30px;
+}
+.formModal__content .form form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+.formModal__content .form form h2 {
+  text-align: center;
+}
+.formModal__content .form form .item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px;
+}
+.formModal__content .form form .item label {
+  margin-bottom: 5px;
+}
+.formModal__content .form form .item input {
+  height: 20px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #2f3542;
+  background-color: #f1f2f6;
+  color: #353b48;
+}
+.formModal__content .form form .item input:focus {
+  border-bottom: 2px solid #2f3542;
+}
+.formModal__content .form form .item textarea {
+  resize: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #2f3542;
+  background-color: #f1f2f6;
+  color: #353b48;
+}
+.formModal__content .form form .item textarea:focus {
+  border-bottom: 2px solid #2f3542;
+}
+.formModal__content .form form .item p {
+  font-family: "Roboto", sans-serif;
+  color: #eb4d4b;
+  font-size: 13px;
+}
+.formModal__content .form form button {
+  width: 150px;
+  border: none;
+  padding: 10px 12px;
+  color: #f1f2f6;
+  background: #009fe3;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-top: 15px;
+}
+.formModal__content .form form button:hover {
+  background: "";
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transform: translateX(5px) scale(1.2);
+}
+.formModal__content .form .overlayIsValid {
+  position: absolute;
+  background: #353b48;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  display: none;
+}
+.formModal__content .form .overlayIsValid__content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formModal__content .form .overlayIsValid__content p {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  color: #f1f2f6;
+}
+.formModal__content .info {
+  font-family: "Raleway", sans-serif;
+  background: #2f3640;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 30px;
+  color: #f1f2f6;
+  text-align: center;
+}
+.formModal__content .info a {
+  padding: 10px;
+  color: #009fe3;
+}
+.formModal__content .info a i {
+  transition: all 0.4s ease;
+}
+.formModal__content .info a i:hover {
+  transform: translateX(5px) scale(1.2);
+}
+.formModal__content .info p {
+  font-size: 13px;
+  padding: 10px;
+}
+.formModal__content .info p i {
+  margin-right: 5px;
+}
+
+.projectModal {
+  background: #353b48;
+  display: flex;
+  width: 700px;
+  height: 500px;
+}
+.projectModal .left {
+  width: 50%;
+}
+.projectModal .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.projectModal .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  z-index: 10;
+  padding: 20px;
+}
+.projectModal .right .action {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.projectModal .right .action a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #009fe3;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: all 1s ease;
+}
+.projectModal .right .action a:hover {
+  transform: translateX(5px) scale(1.2);
+}
+.projectModal .right .bgWaveTop {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.projectModal .right .bgWaveBottom {
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.projectModal .right .title {
+  color: white;
+  font-size: 18px;
+}
+.projectModal .right .desc {
+  font-size: 15px;
+  color: white;
+  text-align: justify;
+}
+.projectModal .right .category {
+  color: white;
+  text-align: center;
+}
+.projectModal .right .tags {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.projectModal .right .tags__item {
+  background: #666666;
+  padding: 10px 12px;
+  color: white;
+  font-weight: 800;
+  font-size: 12px;
+}
+.projectModal .right .tags .itemCSS {
+  background-color: #2e86de;
+}
+.projectModal .right .tags .itemSCSS {
+  background-color: #ff9ff3;
+}
+.projectModal .right .tags .itemHTML {
+  background-color: #ff9f43;
+}
+.projectModal .right .tags .itemJS {
+  background-color: #f9ca24;
+}
+
 body {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  background: linear-gradient(rgba(37, 39, 41, 0.918), #7c7c7c);
-}
-body #myVideo {
-  z-index: -99;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-.background-particles {
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  z-index: 0;
+  background: #f1f2f6;
 }
 
 /*# sourceMappingURL=style.css.map */

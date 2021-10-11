@@ -33,6 +33,54 @@ class Form {
         }, 1500)
 
     }
+    verifForm1(){  
+        this.itemsForm.forEach((item) => {
+            item.addEventListener('input', (e) => {
+                const errors = document.querySelectorAll("form p")
+                errors.forEach((err) => {
+                    err.remove()
+                })
+                if (item.name === "name" || item.name === "firstName") {
+                    const regexEmpty = new RegExp(/^[A-Za-z-]+$/);
+                    console.log('ici');
+                    if (!item.value) {
+                        item.style.borderColor ="#2f3542"
+                    } else if (!regexEmpty.test(item.value)) {
+                        item.style.borderColor ="red"
+                        const err = `Seul les caractéres alphanumériques sont acceptés, utilisé (-) pour les ${item.name} composés.`
+                        item.after(this.templateError(err))
+                    } else if (item.value.length < 3) {
+                        item.style.borderColor ="red"
+                    }else{
+                        item.style.borderColor ="green"
+                    }
+                } else if (item.name === "email") {
+                    const regexEmail = new RegExp(/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/)
+                    if (!item.value) {
+                        item.style.borderColor ="#2f3542"
+                    } else if (!regexEmail.test(item.value)) {
+                        item.style.borderColor ="red"
+                        const err = `Veuillez renseigner un email valid.`
+                        item.after(this.templateError(err))
+                    }
+                    else{
+                        item.style.borderColor ="green"
+                    }
+                } else if (item.name === "objet" || item.name === "message") {
+                    if (!item.value) {
+                        item.style.borderColor ="#2f3542"
+                    } else if (item.value.length < 10) {
+                        item.style.borderColor ="red"
+                        const err = `Veuillez renseigner 10 caractères au minimumn pour le ${item.name}.`
+                        item.after(this.templateError(err))
+                    }else {
+                        item.style.borderColor ="green"
+                    }
+                }
+                }    
+            )
+        })
+    }
     verifForm() {
         this.itemsForm.forEach((item) => {
             if (item.name === "name" || item.name === "firstName") {
@@ -53,13 +101,13 @@ class Form {
                     const err = `Veuillez renseigner votre ${item.name}.`
                     item.after(this.templateError(err))
                 } else if (!regexEmail.test(item.value)) {
-                    const err = `Veuillez renseigner un email valid ${item.name}.`
+                    const err = `Veuillez renseigner un email valid.`
                     item.after(this.templateError(err))
                 }
             } else if (item.name === "objet" || item.name === "message") {
                 //TODO FIND REGEX TO INPUT TEXT AVOID JS 
                 /* const regexEmpty = new RegExp(/^[A-Za-z-]+$/);  */               if (!item.value) {
-                    const err = `Veuillez renseigner votre ${item.name}.`
+                    const err = `Veuillez renseigner un ${item.name}.`
                     item.after(this.templateError(err))
                 }/*  else if (!regexEmpty.test(item.value)) {
                     const err = `Attention  ${item.name}`
@@ -83,6 +131,9 @@ class Form {
     }
     resetForm() {
         this.form.reset()
+        this.itemsForm.forEach((item) => {
+            item.style.borderColor = "#2f3542"
+        })
         const errors = document.querySelectorAll("form p")
         errors.forEach((err) => {
             err.remove()

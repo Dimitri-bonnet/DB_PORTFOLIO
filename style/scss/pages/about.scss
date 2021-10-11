@@ -1,10 +1,9 @@
-
 .about{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row-reverse;
-    color: $colorWhite;
+    color: $color1;
     min-height: 90vh;
         .tab {
             height: 600px;
@@ -13,7 +12,7 @@
             &__action{
                 display: flex;
                 button{
-                    background:$colorWhite;
+                    background:$color2;
                     width: 100%;
                     border: none;
                     outline: none;
@@ -23,8 +22,10 @@
                     font-size: 16px;
                     letter-spacing: 2px;
                      transition: background 0.5s ease-in-out;
+                     color: $colorWhite;
                     &:hover:not(.active){
                         background: $actionColor;
+                      
                     }
                 }
                 .active{
@@ -45,7 +46,7 @@
                     height: 100%;
                     color: $color1;
                     h4{
-                        color: $colorWhite;
+                        color: $color1;
                         text-align: center;
                         font-weight: initial;
                     }
@@ -53,7 +54,8 @@
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-                        background-color:$colorWhite;
+                        background-color:$color1;
+                        color: $colorWhite;
                         width: 100%;
                         font-size: 14px;
                         box-shadow: $btnShadow;
@@ -177,8 +179,8 @@
                                 width: 20%;
                                 padding: 10px;
                                 font-weight: 800;
-                                background-color:$colorWhite;
-                                color: $color1;
+                                background-color:$color3;
+                                color: $colorWhite;
                             }
                         }
                     }
@@ -211,7 +213,7 @@
             }  
         p{
             font-family: $roboto;
-            color: $colorWhite;
+            color: $color3;
             text-align: justify;
             text-justify: inter-word;
             font-size: 14px;

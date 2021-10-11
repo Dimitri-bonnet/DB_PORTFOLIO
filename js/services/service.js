@@ -28,7 +28,7 @@ class Service {
                 desc: "Intégration d'une maquette pour une application de réservation pour restaurant en appliquant la statégie mobile first.",
                 category: 'Intégration , Mobile first',
                 tags : [
-                    "SCSS","HTML","GIT"
+                    "SCSS","HTML",
                 ],
                 linkGit : "https://github.com/Dimitri-bonnet/DimitriBonnet_3_22-01-2021",
                 linkUrl: "https://dimitri-bonnet.github.io/DimitriBonnet_3_22-01-2021/",
@@ -42,7 +42,7 @@ class Service {
                 desc: "Rentre le formulaire d'inscription pleinement fonctionnel pour l'inscription aux concours de GameOn.",
                 category: "Responsive, Programmation",
                 tags : [
-                    "SCSS","HTML","JS","GIT",
+                    "SCSS","HTML","JS",
                 ],
                 linkGit: "https://github.com/Dimitri-bonnet/GameOn-website-FR",
             },
@@ -55,7 +55,7 @@ class Service {
                 desc: "Intégration d'une maquette et exploitation de la donnée (JSON) afin de réaliser un site responsive et accéssible. Naviguation au clavier et utilisable par les lecteurs d'écran." ,
                 category: "Intégration, Accésibilité, Résponsive, POO",
                 tags : [
-                    "SCSS","HTML","JS","JSON","GIT"
+                    "SCSS","HTML","JS",
                 ],
                 linkGit : "https://github.com/Dimitri-bonnet/DimitriBonnet_6_02-04-2021"
             },
@@ -68,7 +68,7 @@ class Service {
                 desc: "Intégration d'une maquette, développement de deux solutions pour rechercher et filtrer des recettes dans un livre de cusine et selectionner la plus pérformante en fonction des réslutats.",
                 category: "Intégration, Accésibilité, Résponsive, POO",
                 tags : [
-                    "SCSS","HTML","JS","JSON","GIT"
+                    "SCSS","HTML","JS",
                 ],
                 linkGit :"https://github.com/Dimitri-bonnet/DimitriBonnet_7-07-09-2021"
             },

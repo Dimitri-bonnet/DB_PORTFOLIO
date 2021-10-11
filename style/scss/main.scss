@@ -10,23 +10,11 @@
 @import "./pages/about.scss";
 @import "./components/modal.scss";
 @import "./components/loader.scss";
+@import "./components/modalForm.scss";
+@import "./components/modalProject.scss";
  body{
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  background: linear-gradient(rgba(37, 39, 41, 0.918), rgb(124, 124, 124));
-   #myVideo {
-     z-index: -99;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-  }
+  background:$colorWhite;
  }
-
-.background-particles{
-   position: absolute;
-    height: 100vh;
-    width: 100vw;
-    z-index: 0;
-}

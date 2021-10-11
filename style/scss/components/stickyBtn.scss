@@ -16,7 +16,6 @@
   box-shadow: $btnShadow;
   transition: all 1s ease;
   &:hover{
-  
     transform:  translateX(5px) scale(1.2);
   }
 }
