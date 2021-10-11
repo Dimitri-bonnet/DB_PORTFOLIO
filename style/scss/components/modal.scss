@@ -5,7 +5,7 @@
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(202, 202, 202, 0.527);
+    background-color:#f5f6fa30;
     z-index: 99;
     .modal{
       position: absolute;
@@ -13,25 +13,24 @@
       left: 50%;
       transform: translate(-50%, -50%);
       .modal__content{
-        box-shadow: $cardBoxShadow;
+        box-shadow: $cardShadow;
         .cm{
           background: none;
           border: none;
           cursor: pointer;
           position: absolute;
-          color: $primary;
-          right: 10px;
+          color: $actionColor;
+          right: 15px;
           top: 10px;
           z-index: 99;
           transition: all 0.4s ease;
           &:hover{
-            color: $secondary;
-            transform: scale(1.1);
+            transform:  translateX(5px) scale(1.2);
           }
         }
       }
       .formModal{
-        background-color: white;
+        background-color: $colorWhite;
         width: 700px;
         height: 500px;
         padding: 40px;
@@ -104,7 +103,7 @@
         }
       }
     .projectModal{
-      background-color: rgb(255, 255, 255);
+      background: #353b48;
       display: flex;
       width: 700px;
       height: 500px;
@@ -114,7 +113,6 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
-        /*   height: 100%; */
         }
       }
       .right{
@@ -126,35 +124,51 @@
         position: relative;
         font-family: $roboto;
         z-index: 10;
-          .logo{
-            margin-top: 15px;
-            width: 200px;
+        padding: 20px;
+        .action{
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            a{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: $actionColor;
+              font-size: 20px;
+              text-decoration: none;
+              margin-left: 10px;
+              transition: all 1s ease;
+              &:hover{
+                transform:  translateX(5px) scale(1.2);
+              }
+            }
           }
           .bgWaveTop{
+            width: 100%;
             position: absolute;
             top: 0;
+            left: 0;
             z-index: -1;
           }
           .bgWaveBottom{
+            width: 80%;
             position: absolute;
             bottom: 0;
+            right: 0;
             z-index: -1;
           }
-          .logo{
-            text-align: center;
-          }
           .title{
-            text-align: center;
+            color: white;
             font-size: 18px;
-            padding: 10px;
+     
           }
           .desc{
-            padding: 10px;
             font-size: 15px;
+            color: white;
             text-align: justify;
           }
           .category{
-            padding: 10px;
+            color: white;
             text-align: center;
           }
           .tags{
@@ -181,18 +195,7 @@
               background-color: #f9ca24;;
             }
           }
-          .action{
-            a{
-              color: $primary;
-              margin: 10px;
-              font-size: 30px;
-              cursor: pointer;
-              transition: all 0.4s ease;
-              &:hover{
-                color: $secondary;
-              }
-            }
-          }
+         
       }
     }
     }  

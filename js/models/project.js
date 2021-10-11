@@ -23,10 +23,10 @@ class Project {
         contentRight.classList.add("right");
         const svgTop = document.createElement("img");
         svgTop.classList.add("bgWaveTop");
-        svgTop.src = "assets/svgs/svgWaveTop.svg";
+        svgTop.src = "assets/svgs/rect.svg";
         const svgBottom = document.createElement("img");
         svgBottom.classList.add("bgWaveBottom");
-        svgBottom.src = "assets/svgs/svgWaveBottom.svg";
+        svgBottom.src = "assets/svgs/rect1.svg";
         const logoProject = document.createElement("img");
         logoProject.src = `/assets/img/projects/logo/${this.logo}`;
         logoProject.classList.add("logo")
@@ -74,7 +74,7 @@ class Project {
             linkUrl.href = this.linkUrl
             linkUrl.setAttribute("target", "_blank")
             const iconLinkUrl = document.createElement("i")
-            iconLinkUrl.classList.add("fas", "fa-eye")
+            iconLinkUrl.classList.add("fas", "fa-link")
             linkUrl.append(iconLinkUrl)
             actionContainer.append(linkGit, linkUrl)
         } else {
@@ -83,7 +83,7 @@ class Project {
         contentLeft.append(imgProject)
         titleContainer.append(subtitleProject)
         category.append(spanCategory)
-        contentRight.append(svgTop, svgBottom, logoProject, titleContainer, descProject, category, containerTags, actionContainer)
+        contentRight.append(svgTop,svgBottom,actionContainer,titleContainer,descProject,containerTags)
         container.append(contentLeft, contentRight)
         return container
     }

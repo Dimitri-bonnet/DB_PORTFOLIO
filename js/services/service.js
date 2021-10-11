@@ -8,12 +8,12 @@ class Service {
                 id: 1,
                 imgs: ["reservia.png","reservia.png"],
                 title: "Réservia",
-                subtitle:"Projet Openclassrooms, transformez une maquette en site web",
+                subtitle:"Projet Openclassrooms : transformez une maquette en site web",
                 logo: "reservia.svg",
                 desc : "Intégration d'une maquette pour un site de réservation pour hébergement de vacances, le site est résponsive et la semantique est réspectée.",
-                category : "Integration, Responsive, Vitrine",
+                category : "Integration, Responsive",
                 tags : [
-                    "CSS","HTML","GIT"
+                    "CSS","HTML",
                 ],
                 linkGit :  "https://github.com/Dimitri-bonnet/DimitriBonnet_2_28-12-2020",
                 linkUrl : "https://dimitri-bonnet.github.io/DimitriBonnet_2_28-12-2020/#activites"
@@ -72,7 +72,7 @@ class Service {
                 ],
                 linkGit :"https://github.com/Dimitri-bonnet/DimitriBonnet_7-07-09-2021"
             },
-            {
+         /*    {
                 id: 6,
                 imgs:["test.jpg", "test.jpg"],
                 title: "DjAddict",
@@ -104,7 +104,7 @@ class Service {
                 category: "",
                 tags: [],
                 linkGit: "",
-            },        
+            }, */        
         ]
         return dataProjects
     }

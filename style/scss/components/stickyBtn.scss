@@ -11,12 +11,13 @@
 	padding:15px;
   font-size: 15px;
   transition: all 0.4s ease;
-  background-color: rgba(255, 255, 255, 0.4);
-  color: white;
+  background-color: $actionColor;
+  color:$colorWhite;
+  box-shadow: $btnShadow;
   transition: all 1s ease;
   &:hover{
-    box-shadow: $cardBoxShadow;
-    transform:  translateX(-5px) scale(1.2);
+  
+    transform:  translateX(5px) scale(1.2);
   }
 }
 

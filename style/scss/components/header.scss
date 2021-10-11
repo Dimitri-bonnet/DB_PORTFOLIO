@@ -1,19 +1,17 @@
 header{
     font-family: 'Oswald', sans-serif;
-    color: white;
     font-size: 15px;
     nav{
- 
         height: 10vh;
         width: 100%;
         display: flex;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
         text-decoration: none;
         a{
-            color: white;
+            color:$colorWhite;
             text-decoration: none;
         }
         .brand{
+            z-index: 2;
             width: 30%;
             display: flex;
             align-items: center;
@@ -30,14 +28,12 @@ header{
                     h2{ 
                        font-size: 10px;
                        letter-spacing: 2.5px;
-                      /*  color: $secondary; */
-                   
                     }
                 }  
             }
         }
         .nav{
-         width: 40%;
+            width: 40%;
             ul{
                 display: flex;
                 justify-content: center;
@@ -52,20 +48,13 @@ header{
                     position: relative;
                     letter-spacing: 2px;
                     font-weight: 600;
-                    &:first-child{
-                        border-left: 2px solid rgba(255, 255, 255, 0.1);
-                        border-right: 2px solid rgba(255, 255, 255, 0.1);
-                    }
-                    &:last-child{
-                        border-right: 2px solid rgba(255, 255, 255, 0.1);
-                    }
                     &::before{
                         content: '';
                         position: absolute; 
                         bottom:  -2px;
                         width: 100%;
                         height: 2px;
-                        background-color:$tertiary;
+                        background-color:$color2;
                         transform-origin: 100% 0;
                         transform: scaleX(0);
                         transition: transform  0.3s;
@@ -73,7 +62,7 @@ header{
                         &:hover::before {
                         transform: scaleX(1);
                         transform-origin: 0 0;
-                        background-color: $secondary;
+                        background-color: $actionColor;
                         }
                     a{
                         display: flex;
@@ -87,16 +76,18 @@ header{
             }
         }  
         .icons{
+
             width: 30%;
             display: flex;
             align-items: center;
             justify-content: center;
             a{
+                z-index: 10;
                display: flex;
                align-items: center;
                justify-content: center;
                 margin: 0 10px;
-                color: white;
+                color: $actionColor;
                 text-decoration: none;
                 transition: all 0.6s ease;
                 &:last-child{
@@ -162,7 +153,6 @@ header{
                 top: 100%;
                 right: 0;
                 background-color: rgba(0, 0, 0, 0.9);
-                box-shadow: $cardBoxShadow;
                 height: 91vh;
                 transform: translateX(200px);
                 width: 200px;

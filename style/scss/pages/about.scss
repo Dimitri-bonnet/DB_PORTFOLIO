@@ -4,18 +4,16 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row-reverse;
+    color: $colorWhite;
     min-height: 90vh;
         .tab {
             height: 600px;
             width: 50%;
             overflow: hidden;
-          /*   box-shadow: $cardBoxShadow; */
-          /*   background: linear-gradient($primary, #91a7e5); */
-            color: white;
             &__action{
                 display: flex;
                 button{
-                    background: rgba(0, 0, 0, 0.5);
+                    background:$colorWhite;
                     width: 100%;
                     border: none;
                     outline: none;
@@ -24,20 +22,18 @@
                     font-family: $raleWay;
                     font-size: 16px;
                     letter-spacing: 2px;
-                    color: white; 
                      transition: background 0.5s ease-in-out;
                     &:hover:not(.active){
-                        background: rgba(0, 0, 0, 1);
+                        background: $actionColor;
                     }
                 }
                 .active{
-                    color: white;
+                    color: $colorWhite;
                     transition: background 0.5s ease-in-out;
                     font-weight: 800;
-                    background: $primary;
+                    background: $actionColor;
                     margin-bottom: -5px;
-                    box-shadow: $cardBoxShadow; 
-                  
+                    box-shadow: $btnShadow;    
                 }
             }
             &__item{
@@ -47,7 +43,9 @@
                 .content__parcours{
                     padding: 30px;
                     height: 100%;
+                    color: $color1;
                     h4{
+                        color: $colorWhite;
                         text-align: center;
                         font-weight: initial;
                     }
@@ -55,10 +53,11 @@
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-                        background-color: white;
-                        color: black;
+                        background-color:$colorWhite;
                         width: 100%;
                         font-size: 14px;
+                        box-shadow: $btnShadow;
+                        transition: all 1s ease; 
                         &__show{
                             display: flex;
                             align-items: center;
@@ -71,7 +70,7 @@
                                 display: flex;
                                 justify-content: center;
                                 i{
-                                    color: $secondary;
+                                    color: $actionColor;
                                 }
                                 .fa-chevron-circle-up{
                                     display: none;
@@ -85,17 +84,11 @@
                         &__hidden{
                             padding: 10px;
                             font-size: 12px;
-                            color: black;
                             display: none;
                         }
                         .itemIsActive{
                             display: block;
                             animation: fadeEffect 0.6s ease;        
-                        }
-                        &:hover{
-                            i{
-                                color: $tertiary;
-                            }
                         }
                     }
                     .formations{
@@ -123,16 +116,15 @@
                         .bar {
                             width: 100%;
                             height: 6px;
-                            background-color: #ddd;
+                            background-color:$color2;
                             margin: 5px 0px;
                             .skills {
                                 height: 6px;
-                                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;;
                               }
                               .HTML {
-                                  width: 90%; 
-                                  background-color: #ff9f43;
-                                  animation: fillBarHTML 1s ease-in-out;   
+                                width: 90%; 
+                                background-color: #ff9f43;
+                                animation: fillBarHTML 1s ease-in-out;   
                               }
                               .SCSS{
                                 width: 70%;
@@ -185,8 +177,8 @@
                                 width: 20%;
                                 padding: 10px;
                                 font-weight: 800;
-                                background-color: rgb(255, 255, 255);
-                                color: black;
+                                background-color:$colorWhite;
+                                color: $color1;
                             }
                         }
                     }
@@ -217,19 +209,13 @@
                     object-fit: cover;
                 }
             }  
-        
         p{
             font-family: $roboto;
-            color: white;
+            color: $colorWhite;
             text-align: justify;
             text-justify: inter-word;
             font-size: 14px;
             line-height: 25px;
-        }
-        span{
-         /*    background: $primary;
-            color: white;
-            padding: 2px ;*/
         }
     } 
 }

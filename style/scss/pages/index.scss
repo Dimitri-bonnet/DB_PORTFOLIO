@@ -5,7 +5,7 @@
     &__header{
         display: flex;
         justify-content: center;
-        color: white;
+        color: $colorWhite;
         width:100%;
         height: 30%;
         font-family:$raleWay;
@@ -28,7 +28,6 @@
                     font-size: 20px;
                     letter-spacing: 1px;
                     span{
-                       /*  color: $tertiary; */
                         font-weight: 800;
                     }
                 }
@@ -41,63 +40,55 @@
         justify-content: space-evenly;
         height: 60%;
         .card{ 
+            z-index: 2;
             display: flex;
             flex-direction: column;
             width: 25vw;
             height: 50vh;
             max-width: 300px;
-            box-shadow: $cardBoxShadow;
+            box-shadow: $cardShadow;
+            background: linear-gradient( $color2,$color1);
             &__content{
-                color: white;
+                color:$colorWhite;
                 padding: 20px;
                 height: 60%;
+                h4{
+                    font-family: $raleWay;
+                    letter-spacing: 5px;
+                    margin-bottom: 10px;
+                }
+                h3{
+                     font-family: $raleWay;
+                     letter-spacing: 5px;
+                     margin-bottom: 40px;
+                }
+                p{
+                    font-size: 12px;
+                    font-family: $raleWay;
+                    margin: 16px 0 12px 0;
+                    font-weight: 800;
+                }
             }
             &__img{
                 display: flex;
                 justify-content: center;
                 height: 40%;
-            }
-            .spin{
-                transform-origin: center;
-                animation: spin 10s infinite  
-              }
-             @keyframes spin {
-                from{
-                transform: rotate(0deg);
-                    }
-                to{
-                 transform: rotate(360deg);
+                img{
+                    width: 250px;
+                    height: 200px;
                 }
-             }
-            img{
-                width: 250px;
-                height: 200px;
             }
-            h4{
-                font-family: $raleWay;
-                letter-spacing: 5px;
-                margin-bottom: 10px;
-            }
-            h3{
-                 font-family: $raleWay;
-                 letter-spacing: 5px;
-                 margin-bottom: 40px;
-            }
-            p{
-                font-size: 12px;
-                font-family: $raleWay;
-                margin: 16px 0 12px 0;
-                font-weight: 800;
-            }
+          
+           
         }
         .card1{
-            background: linear-gradient($tertiary, #91e595);
+            background: linear-gradient( $color2,$color1);
         }
         .card2{
-           background: linear-gradient($secondary, #b591e5);
+            background: linear-gradient( $color2,$color1);
         }
         .card3{
-            background: linear-gradient($primary, #91a7e5);
+            background: linear-gradient( $color2,$color1);
         }
     }
 }
