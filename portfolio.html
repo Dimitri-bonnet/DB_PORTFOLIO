@@ -5,78 +5,163 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/a13498b757.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="../style/css/style.css" />
     <title>Portfolio</title>
 </head>
 
 <body>
-    <main id="swup" class="portfolio">
-      <div class="slideshow-container  transition-fade">
+    <header>
+        <nav>
+            <div class="brand">
+                <a href="/index.html" class="isActiveItemNav">
+                    <svg id="Calque_1" height="35" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 227.89 193.81">
+                        <title>Sans titre - 2</title>
+                        <g>
+                            <path
+                                d="M23.58,219.87V26.06h93.86q44.94,0,74.57,13T236.55,74a84.87,84.87,0,0,1,14.92,48.73q0,29.48-16.31,51.32t-46.53,33.85q-30.23,12-71.19,12Zm207.6-97.18q0-24.3-13.32-43.4T179.28,49.4Q154,38.62,117.44,38.61H43.86v168.7h73.58q37,0,62.44-11.19t38.38-30.44A75.44,75.44,0,0,0,231.18,122.69Z"
+                                transform="translate(-23.58 -26.06)" style="fill: #009fe3" />
+                            <path
+                                d="M165.86,169.08a47.5,47.5,0,0,1-6.93,25.4,51,51,0,0,1-18.77,17.93,52.56,52.56,0,0,1-26.24,6.66H23.63V26.2h90q13.59,0,23.52,7.19A47.39,47.39,0,0,1,152.4,51.87a54.49,54.49,0,0,1,5.3,23.49,51.4,51.4,0,0,1-7.34,26.76A43.45,43.45,0,0,1,130,120.19a48.06,48.06,0,0,1,26.24,18.33A51.14,51.14,0,0,1,165.86,169.08ZM37.5,38.69v77.15h70.71a31.81,31.81,0,0,0,18.63-5.57,40.61,40.61,0,0,0,17.27-33A42.5,42.5,0,0,0,139.75,58a36.29,36.29,0,0,0-12.1-14,30.79,30.79,0,0,0-17.81-5.3ZM152,167.18a40.57,40.57,0,0,0-4.76-19.29,41.15,41.15,0,0,0-12.92-14.66,31.42,31.42,0,0,0-18.49-5.71H37.5v79.05h76.42A35.13,35.13,0,0,0,133.23,201,40.2,40.2,0,0,0,147,186.33,39,39,0,0,0,152,167.18Z"
+                                transform="translate(-23.58 -26.06)" style="fill: #009fe3" />
+                        </g>
+                    </svg>
+                    <div class="me">
+                        <h1>BONNET DIMITRI</h1>
+                        <h2>DEVELOPPEUR FRONT-END</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="/about.html" class="isActiveItemNav y">
+                            A PROPOS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/portfolio.html" class="isActiveItemNav y">
+                            PORTFOLIO
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="icons">
+                <a href="https://github.com/Dimitri-bonnet" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/dimitri-bonnet18/" target="_blank"><i
+                        class="fab fa-linkedin-in fa-lg"></i></a>
+                <a href="/assets/pdf/cv_DB.pdf" target="_blank">
+                    <p>CV</p>
+                </a>
+            </div>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div class="responsiveNav">
+                <div class="responsiveNav__header">
+                    <a href="https://github.com/Dimitri-bonnet" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/dimitri-bonnet18/" target="_blank"><i
+                            class="fab fa-linkedin-in fa-lg"></i></a>
+                    <a href="/assets/pdf/cv_DB.pdf" target="_blank"><i class="fas fa-file"></i></a>
+                </div>
+                <div class="responsiveNav__items">
+                    <ul>
+                        <li>
+                            <a href="/about.html">A PROPOS</a>
+                        </li>
+                        <li>
+                            <a href="/portfolio.html">PORTFOLIO</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="responsiveNav__footer ">
+                    <button class="contact">CONTACTE</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="swup" class="portfolio transition-fade ">
+      <div class="slideshow-container">
         <div class="slideshow"></div>
       </div> 
-      <div class="portfolio__bar transition-title">
+      <div class="portfolio__bar">
         <div class="slideBar">
             <div class="slideBar__bar"></div>
         </div>
       </div>
     </main>
-
-    <!-- <i class="far fa-envelope fa-2x stickyBtnContact contact"></i>
-
+    <button class="stickyBtnContact contact">
+        <i class="far fa-envelope fa-2x  contact"></i>
+    </button>
     <div class="bgModal">
         <div class="modal">
             <div class="modal__content modalAnimOpen">
                 <button class="cm"><i class="far fa-times-circle fa-2x"></i></button>
                 <div class="formModal">
-                    <form action="">
-                        <h2>CONTACTEZ-MOI</h2>
-                        <div class="item">
-                            <label for="name">Nom</label>
-                            <input class="input" type="text" id="name" name="name">
+                    <div class="formModal__content">
+                        <div class="form">
+                            <form action="">
+                                <h2>CONTACTEZ-MOI</h2>
+                                <div class="item">
+                                    <label for="nom">Nom</label>
+                                    <input class="input" type="text" id="nom" name="name">
+                                </div>
+                                <div class="item">
+                                    <label for="prénom">Prénom</label>
+                                    <input class="input" type="text" id="prénom" name="firstName" >
+                                </div>
+                                <div class="item">
+                                    <label for="email">Email</label>
+                                    <input class="input" type="text" id="email" name="email">
+                                </div>
+                                <div class="item">
+                                    <label for="objet">Objet</label>
+                                    <input class="input" type="text" id="objet" name="objet">
+                                </div>
+                                <div class="item">
+                                    <label for="message">Message</label>
+                                    <textarea class="input" id="message" cols="30" rows="3" name="message"></textarea>
+                                </div>
+                                <button>ENVOYER</button>
+                            </form>
+                            <div class="overlayIsValid">
+                                <div class="overlayIsValid__content">
+                                    <p>Merci, votre message a bien été envoyé</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="item">
-                            <label for="firstName">Prénom</label>
-                            <input class="input" type="text" id="firstName" name="firstName">
-                        </div>
-                        <div class="item">
-                            <label for="email">Email</label>
-                            <input class="input" type="text" id="email" name="email">
-                        </div>
-                        <div class="item">
-                            <label for="objet">Objet</label>
-                            <input class="input" type="text" id="objet" name="objet">
-                        </div>
-                        <div class="item">
-                            <label for="message">Message</label>
-                            <textarea class="input" id="message" cols="30" rows="5" name="message"></textarea>
-                        </div>
-                        <button>ENVOYER</button>
-                    </form>
-                    <div class="overlayIsValid">
-                        <div class="overlayIsValid__content">
-                            <p>Merci, votre message a bien été envoyé</p>
+                        <div class="info">
+                            <div>
+                               <img src="/assets/svgs/contact.svg" alt="">
+                            </div>
+                            <div>
+                                <p><i class="fas fa-envelope-open-text"></i>dimitri.bonnet18@gmail.com</p>
+                                <p><i class="fas fa-mobile-alt"></i>06 59 76 72 05</p>
+                            </div>
+                            <p class="info__text">N'hésitez pas à me contacter, je suis à votre disposition pour plus d'informations.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
-
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    </div>
     <script src="node_modules/swup/dist/swup.js"></script>
-    <script src="js/swup/transition.js"></script>
-    <script src="js/components/nav.js"></script>
-    <script src="js/components/modal.js"></script>
-    <script src="js/services/service.js"></script>
-    <script src="js/models/project.js"></script>
     <script src="/js/pages/home.js"></script>
     <script src="js/pages/about.js"></script>
     <script src="js/pages/portfolio.js"></script>
+    <script src="js/components/modal.js"></script>
+
+    <script src="js/components/nav.js"></script>
+
+    <script src="js/services/service.js"></script>
+    <script src="js/models/project.js"></script>
+
     <script src="js/components/form.js"></script>
     <script src="js/generique.js"></script>
     <script src="js/components/sliderDarg.js"></script>
+    <script src="js/swup/swup.js"></script>
 </body>
 
 </html>

@@ -312,6 +312,8 @@ to {
             width: 80%;
         }
         .me{
+            display: none;
+            background-color: green;
             height: 100%;
             padding: 0;
             flex-direction: row;

@@ -6,7 +6,7 @@ class Service {
         const dataProjects = [
             {
                 id: 1,
-                imgs: ["reservia.png","reservia.png"],
+                imgs: ["reservia.jpg","reservia.jpg"],
                 title: "Réservia",
                 subtitle:"Projet Openclassrooms : transformez une maquette en site web",
                 logo: "reservia.svg",
@@ -21,7 +21,7 @@ class Service {
 
             {
                 id: 2,
-                imgs: ["ohmyfood1.jpg", "ohmyfood.png"],
+                imgs: ["ohmyfood.jpg", "ohmyfood.jpg"],
                 title: "Ohmyfood",
                 subtitle: "Projet Openclassrooms, dynamisez une page web avec des animations CSS",
                 logo: "ohmyfood.svg",
@@ -35,7 +35,7 @@ class Service {
             },
             {
                 id: 3,
-                imgs : ["gameon.png","gameonform.jpg"],
+                imgs : ["gameon.jpg","gameon.jpg"],
                 title: "GameOn",
                 subtitle: "Projet Openclassrooms, créez une landing page avec JavaScript",
                 logo: "gameon.svg",
@@ -48,7 +48,7 @@ class Service {
             },
             {
                 id: 4,
-                imgs: ["fisheye.jpg","fisheye1.jpg"],
+                imgs: ["fisheye.jpg","fisheye.jpg"],
                 title :"FishEye",
                 subtitle: "Projet Openclassrooms, créez un site accessible pour une plateform de photographes",
                 logo :"fishEye.svg",

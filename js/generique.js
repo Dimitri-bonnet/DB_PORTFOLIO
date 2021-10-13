@@ -11,16 +11,12 @@ class Generique {
         const itemsNav = document.querySelectorAll('.isActiveItemNav')
         itemsNav.forEach((item) => {  
             item.addEventListener('click', (e) => {
-                console.log(e);
-                console.log(e.target);
                 itemsNav.forEach((item) => {
-                    item.classList.remove('isActive')
-                
+                    item.classList.remove('isActiveItem')
                 })
                 if(e.target.classList.contains('y')){
-                    item.classList.add('isActive')
+                    item.classList.add('isActiveItem')
                 }   
-            
             }) 
         })
     }

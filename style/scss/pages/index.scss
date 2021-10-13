@@ -75,7 +75,7 @@
                 justify-content: center;
                 height: 40%;
                 img{
-                    width: 250px;
+                    width: 200px;
                     height: 200px;
                 }
             }
@@ -128,4 +128,18 @@
   }
 }
 
-
+@media screen and (max-width: 600px) {
+    .home{
+        .card{
+            width: 90vw;
+            &__img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 30vw;
+                }
+            }
+        }
+    }
+}

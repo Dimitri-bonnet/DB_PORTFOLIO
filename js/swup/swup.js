@@ -1,5 +1,7 @@
 const swup = new Swup()
-
+document.addEventListener("DOMContentLoaded", () => {
+   console.log('ici');
+});
 const mount = () => {
     console.log('mount swup');
     if(document.querySelector(".home")){
@@ -7,6 +9,7 @@ const mount = () => {
         home.init()
     }
     if(document.querySelector(".about")){
+        console.log('about');
         const about = new About()
         about.init()
     }
@@ -26,6 +29,4 @@ window.addEventListener('load', (event) => {
     unmount()
     mount()
 });
-/* window.addEventListener('resize', () => {
-    mount()
-}) */
+
