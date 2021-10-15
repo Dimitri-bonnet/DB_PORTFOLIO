@@ -225,6 +225,7 @@
     height: 100%;
   }
   .home__main .card__img img {
+    display: none;
     width: 175px;
     height: 155px;
   }
