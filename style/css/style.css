@@ -503,6 +503,7 @@ header nav .hamburger, header nav .responsiveNav {
     color: #009fe3;
   }
   header nav .navIsActive {
+    display: block;
     z-index: 10;
     width: 200px;
     opacity: 1;
