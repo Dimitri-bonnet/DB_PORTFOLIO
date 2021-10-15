@@ -1,7 +1,5 @@
 const swup = new Swup()
-document.addEventListener("DOMContentLoaded", () => {
-   console.log('ici');
-});
+
 const mount = () => {
     console.log('mount swup');
     if(document.querySelector(".home")){
