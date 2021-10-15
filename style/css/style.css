@@ -218,6 +218,15 @@
     height: 175px;
     max-width: none;
   }
+  .home__main .card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  .home__main .card__content h3 {
+    margin-bottom: initial;
+  }
   .home__main .card__content p {
     display: none;
   }
@@ -235,6 +244,9 @@
 @media screen and (max-width: 600px) {
   .home .card {
     width: 90vw;
+  }
+  .home .card__content {
+    font-size: 10px;
   }
   .home .card__img img {
     width: 100px;

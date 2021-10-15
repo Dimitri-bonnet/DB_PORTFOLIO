@@ -112,6 +112,13 @@
             height: 175px;
             max-width: none;
             &__content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                h3{
+                    margin-bottom: initial;
+                }
                 p{
                     display: none;
                 }
@@ -135,6 +142,9 @@
     .home{
         .card{
             width: 90vw;
+            &__content{
+                font-size: 10px;
+            }
             &__img{
                 img{
                     width: 100px;
