@@ -164,7 +164,7 @@
 .home__main .card__content {
   color: #f1f2f6;
   padding: 20px;
-  /*  height: 60%; */
+  height: 60%;
 }
 .home__main .card__content h4 {
   font-family: "Raleway", sans-serif;
@@ -408,7 +408,7 @@ header nav .hamburger, header nav .responsiveNav {
     top: 100%;
     right: 0;
     background-color: #2f3640f5;
-    height: 91vh;
+    height: 90vh;
     transform: translateX(200px);
     width: 200px;
     opacity: 0;
