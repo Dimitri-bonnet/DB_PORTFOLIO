@@ -164,7 +164,7 @@
 .home__main .card__content {
   color: #f1f2f6;
   padding: 20px;
-  height: 60%;
+  /*  height: 60%; */
 }
 .home__main .card__content h4 {
   font-family: "Raleway", sans-serif;
@@ -212,8 +212,8 @@
   .home__main .card {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-around;
     width: 70vw;
     height: 175px;
     max-width: none;
@@ -223,24 +223,22 @@
   }
   .home__main .card__img {
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .home__main .card__img img {
-    display: none;
-    width: 175px;
-    height: 155px;
+    width: 150px;
+    height: 150px;
   }
 }
 @media screen and (max-width: 600px) {
   .home .card {
     width: 90vw;
   }
-  .home .card__img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   .home .card__img img {
-    width: 30vw;
+    width: 100px;
+    height: 100px;
   }
 }
 header {
