@@ -5,6 +5,7 @@
     flex-direction: row-reverse;
     color: $color1;
     min-height: 90vh;
+
         .tab {
             height: 600px;
             width: 50%;
@@ -364,5 +365,10 @@ to {
                 margin: 5px;
             }
         }
+    }
+}
+@media screen and (max-height: 650px) {
+    .tab{
+       margin-top: 20px;
     }
 }

@@ -156,7 +156,8 @@ header{
                 top: 100%;
                 right: 0;
                 background-color: #2f3640f5;
-                height: 90vh;
+                min-height: 90vh;
+                height: 600px;
                 transform: translateX(200px);
                 width: 200px;
                 opacity: 0;
@@ -298,4 +299,11 @@ header{
             }    
         }
     }   
+}
+@media screen and (max-height: 650px) {
+    header{
+        nav{
+            height: 60px;
+        }
+    }
 }

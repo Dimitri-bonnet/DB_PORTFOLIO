@@ -107,6 +107,15 @@
     width: 100vw;
   }
 }
+@media screen and (max-height: 650px) {
+  .portfolio .slideshow-container .slideshow .slide {
+    max-width: 100px;
+  }
+  .portfolio .slideshow-container .slideshow .slide img {
+    height: 200px;
+    width: 300px !important;
+  }
+}
 .home {
   height: 90vh;
   display: flex;
@@ -251,6 +260,11 @@
   .home .card__img img {
     width: 100px;
     height: 100px;
+  }
+}
+@media screen and (max-height: 650px) {
+  .home {
+    height: 600px;
   }
 }
 .about {
@@ -598,6 +612,11 @@
     margin: 5px;
   }
 }
+@media screen and (max-height: 650px) {
+  .tab {
+    margin-top: 20px;
+  }
+}
 header {
   font-family: "Oswald", sans-serif;
   font-size: 15px;
@@ -753,7 +772,8 @@ header nav .hamburger, header nav .responsiveNav {
     top: 100%;
     right: 0;
     background-color: #2f3640f5;
-    height: 90vh;
+    min-height: 90vh;
+    height: 600px;
     transform: translateX(200px);
     width: 200px;
     opacity: 0;
@@ -880,6 +900,11 @@ header nav .hamburger, header nav .responsiveNav {
 @media screen and (max-width: 400px) {
   header nav .me {
     font-size: 12px;
+  }
+}
+@media screen and (max-height: 650px) {
+  header nav {
+    height: 60px;
   }
 }
 .stickyBtnContact {
@@ -1330,10 +1355,15 @@ html.is-leaving .transition-fade {
 }
 
 body {
-  height: 100vh;
   width: 100vw;
-  overflow: hidden;
   background: #f1f2f6;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    overflow: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
