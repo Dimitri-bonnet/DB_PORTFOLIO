@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/assets/logos/faviconDB.png"/>
-    <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/a13498b757.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style/css/style.css" />
     <title>DB Portfolio</title>
@@ -16,7 +14,7 @@
     <header>
         <nav>
             <div class="brand">
-                <a href="/index.html" class="isActiveItemNav">
+                <a href="/index.html" class="isActiveItemNav closeNavAfterClick">
                     <img src="/assets/logos/logoDB.png" alt="">
                     <div class="me">
                         <h1>BONNET DIMITRI</h1>
@@ -60,10 +58,10 @@
                 <div class="responsiveNav__items">
                     <ul>
                         <li>
-                            <a href="/about.html">A PROPOS</a>
+                            <a class="closeNavAfterClick" href="/about.html">A PROPOS</a>
                         </li>
                         <li>
-                            <a href="/portfolio.html">PORTFOLIO</a>
+                            <a class="closeNavAfterClick"  href="/portfolio.html">PORTFOLIO</a>
                         </li>
                     </ul>
                 </div>
@@ -73,7 +71,7 @@
             </div>
         </nav>
     </header>
-    <main id="swup" class="home transition-fade">
+    <main id="swup" class="home transition-fade delay3">
         <div class="home__header">
             <div class="content">
                 <div class="content__text">
@@ -84,7 +82,7 @@
             </div>
         </div>
         <div class="home__main " >
-            <div class="card card1">
+            <div class="card card1 transition-fade delay1">
                 <div class="card__content">
                     <h4>DEVELOPPEMENT</h4>
                     <h3>WEB</h3>
@@ -97,7 +95,7 @@
                     <img src="/assets/svgs/web.svg" alt="">
                 </div>
             </div>
-            <div class="card card2">
+            <div class="card card2 transition-fade delay2">
                 <div class="card__content">
                     <h4>DEVELOPPEMENT</h4>
                     <h3>MOBILE</h3>
@@ -109,7 +107,7 @@
                     <img src="/assets/svgs/mobile.svg" alt="">
                 </div>
             </div>
-            <div class="card card3 ">
+            <div class="card card3 transition-fade delay3">
                 <div class="card__content">
                     <h4>CONCEPTION</h4>
                     <h3>UI / UX Design</h3>
@@ -124,61 +122,67 @@
             </div>
         </div>
     </main>
-    <button class="stickyBtnContact contact">
-        <i class="far fa-envelope fa-2x  contact"></i>
-    </button>
-    <div class="bgModal">
-        <div class="modal">
-            <div class="modal__content modalAnimOpen">
-                <button class="cm"><i class="far fa-times-circle fa-2x"></i></button>
-                <div class="formModal">
-                    <div class="formModal__content">
-                        <div class="form">
-                            <form action="">
-                                <h2>CONTACTEZ-MOI</h2>
-                                <div class="item">
-                                    <label for="nom">Nom</label>
-                                    <input class="input" type="text" id="nom" name="name">
-                                </div>
-                                <div class="item">
-                                    <label for="prénom">Prénom</label>
-                                    <input class="input" type="text" id="prénom" name="firstName" >
-                                </div>
-                                <div class="item">
-                                    <label for="email">Email</label>
-                                    <input class="input" type="text" id="email" name="email">
-                                </div>
-                                <div class="item">
-                                    <label for="objet">Objet</label>
-                                    <input class="input" type="text" id="objet" name="objet">
-                                </div>
-                                <div class="item">
-                                    <label for="message">Message</label>
-                                    <textarea class="input" id="message" cols="30" rows="3" name="message"></textarea>
-                                </div>
-                                <button>ENVOYER</button>
-                            </form>
-                            <div class="overlayIsValid">
-                                <div class="overlayIsValid__content">
-                                    <p>Merci, votre message a bien été envoyé</p>
+
+    <aside>
+        <button class="stickyBtnContact contact">
+            <i class="far fa-envelope fa-2x  contact"></i>
+        </button>
+    </aside>
+    <aside>
+        <div class="bgModal">
+            <div class="modal">
+                <div class="modal__content modalAnimOpen">
+                    <button class="cm"><i class="far fa-times-circle fa-2x"></i></button>
+                    <div class="formModal">
+                        <div class="formModal__content">
+                            <div class="form">
+                                <form action="">
+                                    <h2>CONTACTEZ-MOI</h2>
+                                    <div class="item">
+                                        <label for="nom">Nom</label>
+                                        <input class="input" type="text" id="nom" name="name">
+                                    </div>
+                                    <div class="item">
+                                        <label for="prénom">Prénom</label>
+                                        <input class="input" type="text" id="prénom" name="firstName" >
+                                    </div>
+                                    <div class="item">
+                                        <label for="email">Email</label>
+                                        <input class="input" type="text" id="email" name="email">
+                                    </div>
+                                    <div class="item">
+                                        <label for="objet">Objet</label>
+                                        <input class="input" type="text" id="objet" name="objet">
+                                    </div>
+                                    <div class="item">
+                                        <label for="message">Message</label>
+                                        <textarea class="input" id="message" cols="30" rows="3" name="message"></textarea>
+                                    </div>
+                                    <button>ENVOYER</button>
+                                </form>
+                                <div class="overlayIsValid">
+                                    <div class="overlayIsValid__content">
+                                        <p>Merci, votre message a bien été envoyé</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="info">
-                            <div>
-                               <img src="/assets/svgs/contact.svg" alt="">
+                            <div class="info">
+                                <div>
+                                   <img src="/assets/svgs/contact.svg" alt="">
+                                </div>
+                                <div>
+                                    <p><i class="fas fa-envelope-open-text"></i>dimitri.bonnet18@gmail.com</p>
+                                    <p><i class="fas fa-mobile-alt"></i>06 59 76 72 05</p>
+                                </div>
+                                <p class="info__text">N'hésitez pas à me contacter, je suis à votre disposition pour plus d'informations.</p>
                             </div>
-                            <div>
-                                <p><i class="fas fa-envelope-open-text"></i>dimitri.bonnet18@gmail.com</p>
-                                <p><i class="fas fa-mobile-alt"></i>06 59 76 72 05</p>
-                            </div>
-                            <p class="info__text">N'hésitez pas à me contacter, je suis à votre disposition pour plus d'informations.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </aside>
+   
 
     <script src="node_modules/swup/dist/swup.js"></script>
     <script src="/js/pages/home.js"></script>
@@ -194,7 +198,7 @@
     <script src="js/components/form.js"></script>
     <script src="js/generique.js"></script>
     <script src="js/components/sliderDarg.js"></script>
-    <script src="js/swup/swup.js"></script>
+    <script type="module" src="js/swup/swup.js"></script>
 
 </body>
 

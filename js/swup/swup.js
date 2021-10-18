@@ -1,5 +1,4 @@
 const swup = new Swup()
-
 const mount = () => {
     console.log('mount swup');
     if(document.querySelector(".home")){
@@ -15,12 +14,11 @@ const mount = () => {
         const portfolio = new PortFolio(new Modal(), new Service(), new SliderDrag())
         portfolio.init()
     }
+
 }
-//TODO DESTROY ALL EVENT UNMOUNT SWUP
 const unmount = () => {
     console.log('unmount swup');
 }
-
 swup.on('willReplaceContent', unmount)
 swup.on('contentReplaced', mount);
 window.addEventListener('load', (event) => {

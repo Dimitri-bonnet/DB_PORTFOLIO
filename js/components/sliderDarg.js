@@ -15,15 +15,14 @@ class SliderDrag {
         let velocity;
         let rafID;
         let test;
-        /*  */
+
         const start = slider.offsetWidth
         const all = this.slideShow.offsetWidth
-      /*   console.log(all); */
+     
         const startPourcent = start * 100 / all
-    /*     console.log(startPourcent); */
-        /* this.slideBar.style.background ="#009fe3";  */
+ 
         this.slideBar.style.width = `${startPourcent}%`;
-        /*  */
+
         slider.addEventListener('mousedown', e => {
           holding = true;
           firstClickX = e.pageX - slider.offsetLeft;
@@ -32,11 +31,11 @@ class SliderDrag {
         })
         slider.addEventListener('mousemove', e => {
           if(!holding) return;
-          /*  */
+       
           const calc = (slider.scrollLeft * 100)  / all
           const r = (calc + startPourcent);
           this.slideBar.style.width = `${r}%`;
-          /*  */
+        
           const x = e.pageX - slider.offsetLeft;
           const scrolled = (x - firstClickX) * 2;
           const prevScrollLeft = slider.scrollLeft
@@ -71,11 +70,10 @@ class SliderDrag {
         }
 
         function barTransition(scroll){
-          /* console.log(scroll); */
+
           const calc = (scroll * 100) / all
           const r =  calc + (start * 100 / all)
-         /*  console.log(calc);
-          console.log(r); */
+
           slideBar.style.width = `${r}%`;
           
         }
@@ -91,13 +89,18 @@ class SliderDrag {
           stopTransition()
         })
         slider.addEventListener('touchend', () => {
-          holder = false;
+          holding = false;
           startTransition()
         })
         slider.addEventListener('touchmove', e => {
           if(!holding) return;
+
+          const calc = (slider.scrollLeft * 100)  / all
+          const r = (calc + startPourcent);
+          this.slideBar.style.width = `${r}%`;
+          
           const x = e.targetTouches[0].pageX - slider.offsetLeft;
-          console.log(x);
+
           const scrolled = (x - firstClickX) * 2;
           const prevScrollLeft = slider.scrollLeft;
           slider.scrollLeft = alreadyLeftScrolled - scrolled;

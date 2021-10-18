@@ -1,6 +1,6 @@
 const hamburger = document.querySelector(".hamburger")
 const nav = document.querySelector(".responsiveNav")
-const itemsNav = document.querySelectorAll(".responsiveNav a")
+const itemsNav = document.querySelectorAll(".closeNavAfterClick")
 
 hamburger.addEventListener('click',() => {
     hamburger.classList.toggle("isActive")
@@ -12,4 +12,3 @@ hamburger.addEventListener('click',() => {
         })
     })
 })
-

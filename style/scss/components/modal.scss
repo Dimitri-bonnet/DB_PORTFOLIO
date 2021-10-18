@@ -35,36 +35,7 @@
       animation-name: fadeIn;
     }
 }
-/* @media screen and (max-width: 900px) {
-  .projectModal, .formModal{
-    width: 80vw !important;
-    }
-    .overlayIsValid{
-      p{
-        font-size: 18px !important;
-      }
-    }
-  } */
-/* @media screen and (max-width: 600px) {
-  .projectModal, .formModal{
-    width: 100vw !important;
-    height: 400px;
-    .left{
-      display: none;
-    }
-    .right{
-      width: 100% !important;
-    }
-    .overlayIsValid{
-      p{
-        text-align: center;
-        font-size: 14px !important;
-      }
-    }
-  }
- 
 
- } */
 @keyframes fadeIn {
   from {
     opacity: 0;

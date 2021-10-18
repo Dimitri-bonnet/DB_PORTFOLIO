@@ -37,6 +37,7 @@
               border-bottom: 2px solid $color3;
               background-color: $colorWhite;
               color: $color1;
+              font-family: $roboto;
               &:focus{
                 border-bottom: 2px solid $color3;
               }
@@ -48,6 +49,7 @@
               border-bottom: 2px solid $color3;
               background-color: $colorWhite;
               color: $color1;
+              font-family: $roboto;
               &:focus{
                 border-bottom: 2px solid $color3;
               }
@@ -125,6 +127,7 @@
           
         }
         p{
+          font-family: $roboto;
           font-size: 13px;
           padding: 10px;
           i{
