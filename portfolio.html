@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/logos/faviconDB.png"/>
     <script src="https://kit.fontawesome.com/a13498b757.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="../style/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/css/style.css" />
     <title>Portfolio</title>
 </head>
 
@@ -81,61 +82,74 @@
         </div>
       </div>
     </main>
-    <button class="stickyBtnContact contact">
-        <i class="far fa-envelope fa-2x  contact"></i>
-    </button>
-    <div class="bgModal">
-        <div class="modal">
-            <div class="modal__content modalAnimOpen">
-                <button class="cm"><i class="far fa-times-circle fa-2x"></i></button>
-                <div class="formModal">
-                    <div class="formModal__content">
-                        <div class="form">
-                            <form action="">
-                                <h2>CONTACTEZ-MOI</h2>
-                                <div class="item">
-                                    <label for="nom">Nom</label>
-                                    <input class="input" type="text" id="nom" name="name">
-                                </div>
-                                <div class="item">
-                                    <label for="prénom">Prénom</label>
-                                    <input class="input" type="text" id="prénom" name="firstName" >
-                                </div>
-                                <div class="item">
-                                    <label for="email">Email</label>
-                                    <input class="input" type="text" id="email" name="email">
-                                </div>
-                                <div class="item">
-                                    <label for="objet">Objet</label>
-                                    <input class="input" type="text" id="objet" name="objet">
-                                </div>
-                                <div class="item">
-                                    <label for="message">Message</label>
-                                    <textarea class="input" id="message" cols="30" rows="3" name="message"></textarea>
-                                </div>
-                                <button>ENVOYER</button>
-                            </form>
-                            <div class="overlayIsValid">
-                                <div class="overlayIsValid__content">
-                                    <p>Merci, votre message a bien été envoyé</p>
+    <aside>
+        <button class="stickyBtnContact contact">
+            <i class="far fa-envelope fa-2x  contact"></i>
+        </button>
+    </aside>
+    <aside>
+        <div class="bgModal">
+            <div class="modal">
+                <div class="modal__content modalAnimOpen">
+                    <button class="cm"><i class="far fa-times-circle fa-2x"></i></button>
+                    <div class="formModal">
+                        <div class="formModal__content">
+                            <div class="form">
+                                <form action="">
+                                    <h2>CONTACTEZ-MOI</h2>
+                                    <div class="item">
+                                        <label for="nom">Nom</label>
+                                        <input class="input" type="text" id="nom" name="name">
+                                    </div>
+                                    <div class="item">
+                                        <label for="prénom">Prénom</label>
+                                        <input class="input" type="text" id="prénom" name="firstName" >
+                                    </div>
+                                    <div class="item">
+                                        <label for="email">Email</label>
+                                        <input class="input" type="text" id="email" name="email">
+                                    </div>
+                                    <div class="item">
+                                        <label for="objet">Objet</label>
+                                        <input class="input" type="text" id="objet" name="objet">
+                                    </div>
+                                    <div class="item">
+                                        <label for="message">Message</label>
+                                        <textarea class="input" id="message" cols="30" rows="3" name="message"></textarea>
+                                    </div>
+                                    <button>ENVOYER</button>
+                                </form>
+                                <div class="overlayIsValid">
+                                    <div class="overlayIsValid__content">
+                                        <p>Merci, votre message a bien été envoyé</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="info">
-                            <div>
-                               <img src="/assets/svgs/contact.svg" alt="">
+                            <div class="info">
+                                <div>
+                                   <img src="/assets/svgs/contact.svg" alt="">
+                                </div>
+                                <div>
+                                    <p><i class="fas fa-envelope-open-text"></i>dimitri.bonnet18@gmail.com</p>
+                                    <p><i class="fas fa-mobile-alt"></i>06 59 76 72 05</p>
+                                </div>
+                                <p class="info__text">N'hésitez pas à me contacter, je suis à votre disposition pour plus d'informations.</p>
                             </div>
-                            <div>
-                                <p><i class="fas fa-envelope-open-text"></i>dimitri.bonnet18@gmail.com</p>
-                                <p><i class="fas fa-mobile-alt"></i>06 59 76 72 05</p>
-                            </div>
-                            <p class="info__text">N'hésitez pas à me contacter, je suis à votre disposition pour plus d'informations.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </aside>
+    <aside>
+        <div class="containerBgItems">
+            <div class="item item1"></div>
+            <div class="item item2"></div>
+            <div class="item item3"></div>
+            <div class="item item4"></div>
+            <div class="item item5"></div>
+        </div>
+    </aside>
     <script src="node_modules/swup/dist/swup.js"></script>
     <script src="/js/pages/home.js"></script>
     <script src="js/pages/about.js"></script>

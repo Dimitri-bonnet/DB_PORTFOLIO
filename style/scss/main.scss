@@ -18,12 +18,82 @@
 
  body{
   width: 100vw;
-  background:$colorWhite;
+  background: linear-gradient(180deg,$colorWhite,#dbdbdb);
   overflow: hidden;
  }
 
- @media screen  and (max-width: 900px){
+ @media screen  and (max-width: 900px) and (orientation: landscape){
     body{
         overflow: auto;
     }
  }
+ 
+ .containerBgItems{
+     overflow: hidden;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     z-index: -1;
+     .item{
+      overflow: hidden;
+       position: absolute;
+       z-index: -1;
+  
+       clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+   }
+   .item1{
+      top: 70vh;
+      left: 0vw;
+      width: 10vw;
+      height: 10vw;
+      min-width: 90px;
+      min-height: 90px;
+      background: linear-gradient(180deg,#00000015,#ffffff15);
+      transform: rotate(-180deg);
+   }
+   .item2{
+      top: 10vh;
+      left: 20vw;
+      width: 20vw;
+      height: 20vw;
+      min-height: 120px;
+      min-width: 120px;
+      background: linear-gradient(180deg,#00000015,#ffffff15);
+      transform: rotate(30deg);
+   }
+   .item3{
+      bottom:-2vh;
+      left: 80vw;
+      width: 10vw;
+      height: 10vw;
+      min-height: 100px;
+      min-width: 100px;
+      background: linear-gradient(180deg,#00000015,#ffffff15);
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      transform: rotate(-85deg);
+   }
+   .item4{
+      bottom:30vh;
+      left: 60vw;
+      width: 15vw;
+      height: 15vw;
+      min-height: 120px;
+      min-width: 120px;
+      background: linear-gradient(180deg,#00000015,#ffffff15);
+      transform: rotate(-200deg);
+   }
+   .item5{
+     bottom:85vh;
+     left: 90vw;
+     width: 5vw;
+     height: 5vw;
+     min-height: 50px;
+     min-width: 50px;
+     background: linear-gradient(180deg,#00000015,#ffffff15);
+     transform: rotate(-65deg);
+  }
+ }
+

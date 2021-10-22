@@ -1,9 +1,10 @@
 .projectModal{
     background: #353b48;
     display: flex;
-    width: 700px;
+    width: 400px;
     height: 500px;
     .left{
+      display: none;
       width: 50%;
       img{
         width: 100%;
@@ -16,7 +17,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
-      width: 50%;
+      width: 100%;
       position: relative;
       font-family: $roboto;
       z-index: 10;

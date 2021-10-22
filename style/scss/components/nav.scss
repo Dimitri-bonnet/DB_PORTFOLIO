@@ -6,7 +6,7 @@ header{
         background: #353b4813;
     }
     nav{
-        height: 10vh;
+        height: 12vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -156,7 +156,7 @@ header{
                 top: 100%;
                 right: 0;
                 background-color: #2f3640f5;
-                min-height: 90vh;
+                min-height: 88vh;
                 height: 600px;
                 transform: translateX(200px);
                 width: 200px;
@@ -303,7 +303,7 @@ header{
 @media screen and (max-height: 650px) {
     header{
         nav{
-            height: 60px;
+         
         }
     }
 }

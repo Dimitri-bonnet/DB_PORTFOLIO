@@ -6,7 +6,6 @@ class SliderDrag {
     }
   
     init() {
-        console.log("init sliderDrag");
         const slider = document.querySelector('.slideshow-container')
         const slideBar = document.querySelector(".slideBar__bar")
         let holding = false;

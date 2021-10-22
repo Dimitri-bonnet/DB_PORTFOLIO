@@ -83,7 +83,7 @@ class Project {
         contentLeft.append(imgProject)
         titleContainer.append(subtitleProject)
         category.append(spanCategory)
-        contentRight.append(svgTop,svgBottom,actionContainer,titleContainer,descProject,containerTags)
+        contentRight.append(svgTop,svgBottom,logoProject,actionContainer,titleContainer,descProject,containerTags)
         container.append(contentLeft, contentRight)
         return container
     }

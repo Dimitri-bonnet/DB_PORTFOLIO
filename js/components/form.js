@@ -19,7 +19,7 @@ class Form {
                 this.isValid(modal)
                 this.sendEmail(formDataJson)
             } else {
-                console.log('errors');
+             /*    console.log('errors'); */
             }
         })
     }
@@ -138,6 +138,6 @@ class Form {
         })
     }
     sendEmail(data){
-        console.log(data);
+        /* console.log(data); */
     }
 }

@@ -6,7 +6,6 @@ const mount = () => {
         home.init()
     }
     if(document.querySelector(".about")){
-        console.log('about');
         const about = new About()
         about.init()
     }
@@ -21,6 +20,7 @@ const unmount = () => {
 }
 swup.on('willReplaceContent', unmount)
 swup.on('contentReplaced', mount);
+
 window.addEventListener('load', (event) => {
     unmount()
     mount()

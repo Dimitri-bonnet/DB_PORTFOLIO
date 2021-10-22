@@ -1,5 +1,5 @@
 .home{
-    height: 90vh;
+    height: 88vh;
     display: flex;
     flex-direction: column;
     &__header{
@@ -12,9 +12,8 @@
         .content{
             display: flex;
             justify-content: space-evenly;
-            height: 50%;
+            align-items: center;
             &__text{
-                margin-top: 60px;
                 p{
                     font-size:37px;
                     letter-spacing: 1px;   
@@ -98,7 +97,19 @@
 @media screen and (max-width: 900px) {
 .home{
     &__header{
-        display: none;
+        .content{
+            &__text{
+                p{
+                    font-size: 28px;
+                }
+                h1{
+                    font-size: 36px;
+                }
+                h3{
+                    font-size: 12px;
+                }
+            }
+        }
     }
     &__main{
         flex-direction: column;
@@ -109,7 +120,7 @@
             align-items: center;
             justify-content: space-around;
             width: 70vw;
-            height: 175px;
+            height: 125px;
             max-width: none;
             &__content{
                 display: flex;
@@ -141,6 +152,21 @@
 
 @media screen and (max-width: 600px) {
     .home{
+        &__header{
+            .content{
+                &__text{
+                    p{
+                        font-size: 24px;
+                    }
+                    h1{
+                        font-size: 32px;
+                    }
+                    h3{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
         .card{
             width: 90vw;
             &__content{
@@ -158,6 +184,7 @@
 
 @media screen and (max-height: 650px) {
     .home{
+        /* background-color: black !important; */
         height: 600px;
     }
 }

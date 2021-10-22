@@ -3,7 +3,7 @@ class About {
 
     }
     init() {
-        console.log('init aboute me');
+
         const btnsTab = document.querySelectorAll(".tab__action button")
         const itemsTab = document.querySelectorAll(".tab__item")
         btnsTab.forEach((btn) => {

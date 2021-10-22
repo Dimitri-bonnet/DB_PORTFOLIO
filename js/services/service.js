@@ -45,6 +45,7 @@ class Service {
                     "SCSS","HTML","JS",
                 ],
                 linkGit: "https://github.com/Dimitri-bonnet/GameOn-website-FR",
+                linkUrl: "https://gameon-db.netlify.app"
             },
             {
                 id: 4,
@@ -57,7 +58,8 @@ class Service {
                 tags : [
                     "SCSS","HTML","JS",
                 ],
-                linkGit : "https://github.com/Dimitri-bonnet/DimitriBonnet_6_02-04-2021"
+                linkGit : "https://github.com/Dimitri-bonnet/DimitriBonnet_6_02-04-2021",
+                linkUrl : 'https://fisheye-db.netlify.app'
             },
             {
                 id: 5,
@@ -70,7 +72,8 @@ class Service {
                 tags : [
                     "SCSS","HTML","JS",
                 ],
-                linkGit :"https://github.com/Dimitri-bonnet/DimitriBonnet_7-07-09-2021"
+                linkGit :"https://github.com/Dimitri-bonnet/DimitriBonnet_7-07-09-2021",
+                linkUrl: "https://les-petits-plats-db.netlify.app"
             },
          /*    {
                 id: 6,

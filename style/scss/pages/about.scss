@@ -4,8 +4,7 @@
     align-items: center;
     flex-direction: row-reverse;
     color: $color1;
-    min-height: 90vh;
-
+    min-height: 88vh;
         .tab {
             height: 600px;
             width: 50%;
@@ -214,6 +213,7 @@
                     max-height: 250px;
                     max-width: 250px;
                     object-fit: cover;
+                    object-position: 75%;
                 }
             }  
         p{
@@ -221,7 +221,7 @@
             color: $color3;
             text-align: justify;
             text-justify: inter-word;
-            font-size: 14px;
+            font-size: 13px;
             line-height: 25px;
         }
     } 

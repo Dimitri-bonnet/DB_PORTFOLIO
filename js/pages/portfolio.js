@@ -7,7 +7,6 @@ class PortFolio {
         this.sliderPortfolio = document.querySelector(".slideshow") 
     }
     init(){
-        console.log('init portfolio');
         this.getProjects()
         this.displayPortfolioProjects()
         this.sliderDrag.init()     
