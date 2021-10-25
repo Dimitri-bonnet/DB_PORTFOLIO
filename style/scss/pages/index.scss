@@ -46,6 +46,7 @@
             flex-direction: column;
             width: 25vw;
             height: 50vh;
+            max-height: 500px;
             max-width: 300px;
             box-shadow: $cardShadow;
             &__content{
@@ -120,7 +121,7 @@
             align-items: center;
             justify-content: space-around;
             width: 70vw;
-            height: 125px;
+            height: 15vh;
             max-width: none;
             &__content{
                 display: flex;
