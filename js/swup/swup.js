@@ -1,6 +1,6 @@
 const swup = new Swup()
+
 const mount = () => {
-    console.log('mount swup');
     if(document.querySelector(".home")){
         const home = new Home()
         home.init()
@@ -16,7 +16,7 @@ const mount = () => {
 
 }
 const unmount = () => {
-    console.log('unmount swup');
+    
 }
 swup.on('willReplaceContent', unmount)
 swup.on('contentReplaced', mount);
