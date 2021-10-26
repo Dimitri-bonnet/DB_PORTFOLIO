@@ -6,7 +6,7 @@ class Service {
         const dataProjects = [
             {
                 id: 1,
-                imgs: ["reservia.jpg","reservia.jpg"],
+                imgs: ["mockup-portfolio-reservia.png","reservia.jpg"],
                 title: "Réservia",
                 subtitle:"Projet Openclassrooms : transformez une maquette en site web",
                 logo: "reservia.svg",
@@ -16,12 +16,12 @@ class Service {
                     "CSS","HTML",
                 ],
                 linkGit :  "https://github.com/Dimitri-bonnet/DimitriBonnet_2_28-12-2020",
-                linkUrl : "https://dimitri-bonnet.github.io/DimitriBonnet_2_28-12-2020/#activites"
+                linkUrl : "https://dimitri-bonnet.github.io/DimitriBonnet_2_28-12-2020"
             },
 
             {
                 id: 2,
-                imgs: ["ohmyfood.jpg", "ohmyfood.jpg"],
+                imgs: ["mockup-portfolio-ohmyfood.png", "ohmyfood.jpg"],
                 title: "Ohmyfood",
                 subtitle: "Projet Openclassrooms, dynamisez une page web avec des animations CSS",
                 logo: "ohmyfood.svg",
@@ -35,7 +35,7 @@ class Service {
             },
             {
                 id: 3,
-                imgs : ["gameon.jpg","gameon.jpg"],
+                imgs : ["mockup-portfolio-gameon.png","gameon.jpg"],
                 title: "GameOn",
                 subtitle: "Projet Openclassrooms, créez une landing page avec JavaScript",
                 logo: "gameon.svg",
@@ -49,7 +49,7 @@ class Service {
             },
             {
                 id: 4,
-                imgs: ["fisheye.jpg","fisheye.jpg"],
+                imgs: ["mockup-portfolio-fisheye.png","fisheye.jpg"],
                 title :"FishEye",
                 subtitle: "Projet Openclassrooms, créez un site accessible pour une plateform de photographes",
                 logo :"fishEye.svg",
@@ -63,7 +63,7 @@ class Service {
             },
             {
                 id: 5,
-                imgs:["lespetitsplats.jpg","lespetitsplats.jpg"],
+                imgs:["mockup-portfolio-lespetitsplats.png","lespetitsplats.jpg"],
                 title: "Les petits plats",
                 subtitle: "Projet Openclassrooms, développez un algorithme de recherche en JavaScript",
                 logo: "lespetitsplats.svg",

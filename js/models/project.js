@@ -3,13 +3,13 @@ class Project {
         this.id = id;
         this.imgs = imgs
         this.title = title,
-            this.subtitle = subtitle,
-            this.logo = logo,
-            this.desc = desc
+        this.subtitle = subtitle,
+        this.logo = logo,
+        this.desc = desc
         this.category = category
         this.tags = tags
         this.linkGit = linkGit,
-            this.linkUrl = linkUrl
+        this.linkUrl = linkUrl
     }
 
     templateModalProject() {
@@ -83,7 +83,7 @@ class Project {
         contentLeft.append(imgProject)
         titleContainer.append(subtitleProject)
         category.append(spanCategory)
-        contentRight.append(svgTop,svgBottom,logoProject,actionContainer,titleContainer,descProject,containerTags)
+        contentRight.append(svgTop, svgBottom, logoProject, actionContainer, titleContainer, descProject, containerTags)
         container.append(contentLeft, contentRight)
         return container
     }
@@ -93,7 +93,7 @@ class Project {
         const img = document.createElement("img");
         const btn = document.createElement("button")
         btn.classList.add('project')
-        btn.innerHTML = `${this.title}`
+        btn.innerHTML = `<span class="project">En savoir plus sur</span> <br> <p class="project">${this.title}</p>`
         img.src = `/assets/img/projects/${this.imgs[0]}`;
         btn.addEventListener("click", (e) => {
             modal.init(e, this.templateModalProject())
