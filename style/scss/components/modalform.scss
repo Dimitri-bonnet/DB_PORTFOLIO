@@ -3,10 +3,13 @@
     color: $color1;
     &__content{
       max-width: 700px;
-      height: 500px;
+      min-width: 300px;
+      max-width: 400px;
+     /*  height: 500px; */
       width: 100%;
-      display: flex;
+      /* display: flex; */
       .form{
+      /*   display: none; */
         width: 50%;
         padding: 10px;
         form{
@@ -108,7 +111,7 @@
       .info{
         font-family:$raleWay;
         background: $color2;
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -141,31 +144,33 @@
 
  @media screen and (max-width: 700px) {
   .formModal{
-    height: auto;
-    width: 100vw ;
+   /*  height: auto;
+    width: 100vw ; */
+    text-align: center;
 
     }
  }
  @media screen and (max-width: 550px) {
   .formModal{
+  /*   width: 100vw; */
       &__content{
-        height: 100%;
-        flex-direction: column-reverse;
+       /*  height: 100%; */
+        /* flex-direction: column-reverse; */
         .form{
-          height: 100%;
-          width: 100%;
+    /*       height: 100%;
+          width: 100%; */
         }
         .info{
           text-align: inherit;
-          flex-direction: row;
-          align-items: center;
-          width: 100%;
-          height: 30%;
+      /*     flex-direction: row; */
+         /*  align-items: center; */
+          /* width: 100%;
+          height: 30%; */
           img{
-            width: 80px;
+            /* width: 80px; */
           }
           &__text{
-           display: none;
+           /* display: none; */
          }
         }
       }

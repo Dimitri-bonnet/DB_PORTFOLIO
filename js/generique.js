@@ -25,9 +25,9 @@ class Generique {
         btnsContact.forEach((btn) => {
             btn.addEventListener('click', (e) => {
                 this.modal.init(e)
-                this.form.submit(this.modal)
+              /*   this.form.submit(this.modal)
                 this.form.verifForm1()
-                this.form.resetForm()
+                this.form.resetForm() */
             })
         })
     }
